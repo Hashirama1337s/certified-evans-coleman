@@ -1,0 +1,65 @@
+[    0.0s] [run_v32] Lohner step = lohner2.lohner_step2(mode=qrw); matcher = MatcherV32 (R8); ladder 1e-15,1e-14,1e-13,1e-12,1e-11,1e-10,1e-9
+[    0.4s] item 2 exact identities (k=1/3): {'sonic_S0_identically_zero': True, 'centre_Dc_equals_lam_c': True}
+[    1.0s] nu_s=0.004 contracts over the box: eps=[1.46e-26 +/- 3.82e-29] epsX=[1.67e-27 +/- 4.67e-30] L*=[7.50 +/- 3.54e-3]
+[    1.0s] sealed rule: nu_s = 0.004 (first in ladder contracting at box radius [1.00e-9 +/- 1e-16])
+[   54.5s]   tau step 50 x=-0.03194 h=0.008553 width=[9.00e-23 +/- 1.77e-26] t=46.6s
+[  106.8s]   lohner step 50 x=-0.0894 h=0.0008553 width=[4.34e-22 +/- 7.78e-26] t=39.2s
+[  145.2s]   lohner step 100 x=-0.1587 h=0.001829 width=[7.80e-22 +/- 2.27e-25] t=77.6s
+[  183.9s]   lohner step 150 x=-0.2739 h=0.00391 width=[1.45e-21 +/- 7.17e-25] t=116.3s
+[  222.7s]   lohner step 200 x=-0.4498 h=0.004181 width=[4.43e-21 +/- 5.65e-25] t=155.1s
+[  260.2s]   lohner step 250 x=-0.7119 h=0.004469 width=[6.94e-21 +/- 2.54e-24] t=192.6s
+[  297.0s]   lohner step 300 x=-1.0364 h=0.004778 width=[2.60e-20 +/- 3.03e-23] t=229.4s
+[  334.7s]   lohner step 350 x=-1.3785 h=0.005109 width=[8.46e-20 +/- 2.41e-24] t=267.0s
+[  372.1s]   lohner step 400 x=-1.7548 h=0.01092 width=[2.07e-19 +/- 2.49e-23] t=304.4s
+[  407.2s]   lohner step 450 x=-2.1982 h=0.01168 width=[5.13e-19 +/- 2.90e-22] t=339.5s
+[  441.5s]   lohner step 500 x=-2.7133 h=0.01248 width=[1.40e-18 +/- 2.38e-21] t=373.9s
+[  476.8s]   lohner step 550 x=-3.2949 h=0.01335 width=[4.35e-18 +/- 2.25e-22] t=409.2s
+[  481.9s] point run: 480.9s |R|=[7.99e-18 +/- 3.56e-21] width_end=[5.34e-18 +/- 4.23e-21] Epoint=[1.67e-24 +/- 1.74e-28]
+[  532.3s]   tau step 50 x=-0.03194 h=0.008553 width=[3.29e-15 +/- 6.18e-19] t=43.5s
+[  579.3s]   lohner step 50 x=-0.0894 h=0.0008553 width=[5.02e-15 +/- 7.21e-19] t=35.6s
+[  614.6s]   lohner step 100 x=-0.1587 h=0.001829 width=[9.64e-15 +/- 3.69e-18] t=70.9s
+[  650.6s]   lohner step 150 x=-0.2739 h=0.00391 width=[1.67e-14 +/- 1.64e-17] t=106.9s
+[  686.1s]   lohner step 200 x=-0.4498 h=0.004181 width=[2.27e-14 +/- 4.25e-18] t=142.4s
+[  719.4s]   lohner step 250 x=-0.7119 h=0.004469 width=[3.15e-14 +/- 4.91e-17] t=175.7s
+[  753.0s]   lohner step 300 x=-1.0364 h=0.004778 width=[1.10e-13 +/- 3.51e-16] t=209.3s
+[  787.7s]   lohner step 350 x=-1.3785 h=0.005109 width=[2.38e-13 +/- 2.45e-17] t=244.0s
+[  820.7s]   lohner step 400 x=-1.7548 h=0.01092 width=[4.77e-13 +/- 3.61e-16] t=277.0s
+[  854.4s]   lohner step 450 x=-2.1982 h=0.01168 width=[1.03e-12 +/- 1.89e-15] t=310.7s
+[  887.9s]   lohner step 500 x=-2.7133 h=0.01248 width=[2.53e-12 +/- 1.09e-15] t=344.1s
+[  919.9s]   lohner step 550 x=-3.2949 h=0.01335 width=[7.26e-12 +/- 2.04e-15] t=376.2s
+[  924.4s] rung r=1e-15: contraction=True  max rad(K)/rad(X)=0.00703  Ebox=[1.93e-24 +/- 7.05e-28]  width_start=[3.08e-15 +/- 2.03e-18] width_end=[8.83e-12 +/- 2.58e-15] (442s)
+[  924.4s] PE1 ladder: [('1e-15', True, 0.007031682024799427, 1.929296050954553e-24)]
+[  924.4s] point repairs: leak4a(enclosed)=[2.51e-78 +/- 9.60e-82]  e_t=[5.09e-31 +/- 1.43e-34]  e^{L dmax}(switch)=[1.00000 +/- 1e-10]  e0=[7.57e-31 +/- 9.65e-35]  e_end=[1.22e-27 +/- 4.91e-30]  e^{L dmx}(end)=[1.00000 +/- 1e-10]  Erad=[1.67e-24 +/- 1.74e-28]
+[  924.4s] point 4c switch tangent: rigorous width [8.07e-16 +/- 2.24e-20], |rigorous - v3 surrogate| <= [8.07e-16 +/- 3.61e-19]
+[  924.4s] PE1: first contracting radius r = 1e-15
+[  924.4s]   V0: K = [0.1124394013880983362 +/- 3.31e-20]   X = [0.11243940138810 +/- 2.67e-15]
+[  924.4s]   W0: K = [8.90132327775564352 +/- 7.92e-18]   X = [8.90132327775564 +/- 4.52e-15]
+[  924.4s]   xc: K = [0.212365646758945385 +/- 7.95e-19]   X = [0.21236564675895 +/- 5.62e-15]
+[  924.4s] V0 certified width: [1.86e-20 +/- 4.78e-23]
+[  924.4s] box repairs: leak4a(enclosed)=[4.26e-32 +/- 3.81e-35]  e_t=[5.09e-31 +/- 1.43e-34]  e^{L dmax}(switch)=[1.00000 +/- 2e-10]  e0=[8.63e-31 +/- 2.83e-35]  e_end=[1.39e-27 +/- 4.63e-30]  e^{L dmx}(end)=[1.00000 +/- 2e-10]  Erad=[1.93e-24 +/- 7.05e-28]
+[  924.4s] box 4c switch tangent: rigorous width [8.45e-10 +/- 1.46e-13], |rigorous - v3 surrogate| <= [1.69e-9 +/- 2.84e-13]
+[  924.4s] PE2 saddle: True  lam=[4.29174946397 +/- 8.77e-12] lam_b=[-0.3867122506 +/- 4.23e-11]
+[ 1088.5s] PE2 v3.1: {'holds': True, 'sign_changes': 1, 'amb': 0, 'mono_steps': 12, 'mono_runs': 3, 'mono_ok': True, 'det_sign': ['-'], 'det_ok': True, 'det_manifold': '-', 'x_monotone_manifold': True, 'x_monotone_centre': True, 'Xprime_manifold': '[1.0 +/- 0.0145]', 'dxdtheta_centre_factor': '[1.0 +/- 1.46e-3]', 'V_manifold': '+', 'U_centre': '-', 'tau_boxes': 194, 'x_boxes': 560, 'tau_bisected': 65, 'x_bisected': 2, 'margin': '[1.385e-27 +/- 3.78e-31]'}
+[ 1100.6s] CONTENT NULL W0: Krawczyk contraction=False (must be False); K inside X per component [True, False, True]; |mid K - mid X|/r = 100; rad K/rad X = 0.00703; Ebox [1.93e-24 +/- 7.05e-28]; cached sonic legs point/box True/True
+[ 1100.6s] CONTENT NULL W0 PASS: True
+[ 1111.6s] CONTENT NULL xc: Krawczyk contraction=False (must be False); K inside X per component [True, True, False]; |mid K - mid X|/r = 100; rad K/rad X = 0.00703; Ebox [2.62e-22 +/- 2.97e-25]; cached sonic legs point/box True/True
+[ 1111.6s] CONTENT NULL xc PASS: True
+[ 1111.6s] CONTENT NULLS (W0, xc) ALL PASS: True
+[ 1150.6s]   tau step 50 x=0.03262 h=0.008553 width=[9.46e-18 +/- 1.95e-21] t=38.2s
+[ 1183.6s]   lohner step 50 x=0.0899 h=0.0008553 width=[2.70e-17 +/- 1.02e-20] t=22.6s
+[ 1205.4s]   lohner step 100 x=0.1612 h=0.001829 width=[3.59e-17 +/- 2.67e-20] t=44.5s
+[ 1227.5s]   lohner step 150 x=0.2831 h=0.00391 width=[4.93e-17 +/- 9.03e-21] t=66.5s
+[ 1249.6s]   lohner step 200 x=0.4772 h=0.004181 width=[5.99e-17 +/- 1.52e-20] t=88.7s
+[ 1270.6s]   lohner step 250 x=0.7739 h=0.008939 width=[6.43e-17 +/- 2.05e-20] t=109.6s
+[ 1291.8s]   lohner step 300 x=1.1523 h=0.009557 width=[5.89e-17 +/- 3.05e-20] t=130.8s
+[ 1313.0s]   lohner step 350 x=1.5795 h=0.01022 width=[5.24e-17 +/- 1.52e-20] t=152.1s
+[ 1335.1s]   lohner step 400 x=2.0362 h=0.01092 width=[4.46e-17 +/- 4.22e-20] t=174.1s
+[ 1356.4s]   lohner step 450 x=2.5526 h=0.01168 width=[3.53e-17 +/- 4.96e-22] t=195.5s
+[ 1378.5s]   lohner step 500 x=3.1527 h=0.01248 width=[2.62e-17 +/- 1.63e-20] t=217.5s
+[ 1399.6s]   lohner step 550 x=3.9690 h=0.0267 width=[2.15e-17 +/- 4.87e-20] t=238.7s
+[ 1421.2s]   lohner step 600 x=5.3977 h=0.05708 width=[1.82e-17 +/- 3.56e-20] t=260.2s
+[ 1442.9s]   lohner step 650 x=9.5862 h=0.1221 width=[1.69e-17 +/- 4.49e-20] t=282.0s
+[ 1451.3s] outward: steps=731 D_sonic<0: True V>0: True lemma: True
+[ 1451.3s] PE3 m/r(t=0) = [0.0595 +/- 8.24e-5]  inside 0.0596 +- 0.0005: True
+[ 1451.3s] total time 1451.3s
+memcap: exit 0, peak 0.10 GB of 8.00 GB cap

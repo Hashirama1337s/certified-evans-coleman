@@ -1,0 +1,144 @@
+# PATCHES: lab paths in the shipped copies
+
+The lab's files name lab folders in string literals (sys.path inserts, input and output file names, usage lines),
+in recorded logs (the folder each run started in, the memory-cap launcher line) and in recorded ledger rows. To
+keep machine paths out of the public repository, every shipped copy has had those strings replaced by placeholders
+from one fixed table, `tools/path_patch.json`, applied in the order below. Nothing else in any file was changed,
+and no file was redacted: the substitution is exactly reversible.
+
+- `tools/check_pins.py` restores every patched file in memory and checks that the restored bytes have the original
+  sha256 (for sealed files: the lab ledger pin, `tools/pins.json`), and that the shipped file has the patched sha256
+  listed here.
+- `tools/reproduce.py` restores the originals inside its work folder before running anything, so every run sees
+  the sealed bytes. The lab root that the restored instruments name is then pointed at the work folder at compile
+  time by `tools/run_sealed.py` (files on disk unchanged).
+- The original strings are stored in the table as hex, so that the table itself carries no path text.
+- Data files (`results/pickles/*.pkl`) are binary and are never patched; none of them contains a lab path.
+
+## Substitution table (applied in this order; restored in reverse order)
+
+| Entry | Placeholder | What the original names |
+|---|---|---|
+| R1 | `<LAB-JSON>` | lab project root, JSON-escaped Windows form (20 characters) |
+| R2 | `<LAB-WIN>` | lab project root, Windows form (18 characters) |
+| R3 | `<LAB>` | lab project root, forward-slash form (code literals, logs, docs) (18 characters) |
+| R4 | `<lab>` | lab project root, lower-case form (ledger rows) (18 characters) |
+| R5 | `<MEMCAP>` | the lab's memory-cap launcher (usage lines, logs) (38 characters) |
+| R6 | `<TOOLS>` | the lab's tool folder (18 characters) |
+| R7 | `<LEANPROJ>` | the lab's Lean project folder (13 characters) |
+| R8 | `<HOME>` | user home folder (in recorded shell error lines) (14 characters) |
+| R9 | `<LABDATA-WIN>` | the lab's data folder, Windows form (15 characters) |
+| R10 | `<labdata>` | the lab's data folder, lower-case form (15 characters) |
+| R11 | `<LABDATA>` | the lab's data folder (15 characters) |
+| R12 | `<OWNER>` | the lab owner's first name (in a sealed bar file) (5 characters) |
+| R13 | `<SCRATCH>` | the word for a seat's temporary working folder (in a sealed referee file) (10 characters) |
+
+## Patched files
+
+| File | Pinned | Original sha256 | Patched sha256 | Entries (count) |
+|---|---|---|---|---|
+| code/b4speed/cacheL.py | yes | `a0489e264e31f61a9934b0089644025048adcc304c7e2401031c61c9e8b98533` | `db8f14230f415f13c3775ffbf95d33d2acd4171d319cfa7f94579ceb564e9dc5` | R3 x2 |
+| code/b5/cfg_ec.json | yes | `5ea82344f80880b113ff9e7a6d16e50aaae3af708d580c0bec0227d25e39d480` | `ad0373ec07ba34cbbc8731a004c42f8d0c4ad7fb31f024076d76e3740fa738a3` | R3 x2 |
+| code/b5/cfg_frw.json | no | `528e716aad226b7bbb69d1e4cbeaf22a602f41e4b41a2b7fda5de21872c63ff5` | `c0230b3f9ff43b2485710b170b14a0eaad3ef287bcfae44b3e0edf95563f111f` | R3 x2 |
+| code/b5/close_b5.py | yes | `6c582b7ab485795892492bb5fa76e66930875d31f6d8a49740cfec81e102c6fc` | `19c681f6bd5be6065d867ef3ee2f4057e85fcbdbafa3a13386542a74103b5962` | R3 x1 |
+| code/b5/derive.py | no | `0533d18c5b98524ed5ab9389354c07a1bcc6fb0a3e1e6f36fb6f44a3f459bd91` | `6ffe6d906ba839869cdfe0cd9f36ad3aa67876511f3468ec606a751e35af9ec5` | R3 x1 |
+| code/b5/make_result.py | no | `13cea3546d489e176d78e80df5fbae13914a4d59faa18221b7048496f2507002` | `751e89dfb99a9e32f732f19588652e5cb8b41a2eb9683919c97178308ca2d23a` | R3 x1 |
+| code/b5/mk_frw_hp.py | no | `db415bcbb86456ff52450790d80a19700bed300c00f743dd83abb4a99f5373fc` | `a39d3a2780b63721d54a528c804b8eacebe3fe1ce7be60d2b51da01a6be8abf2` | R3 x1 |
+| code/b5/null.py | no | `63baea27d53f71738c216889d436449b523c9316fcf4536d3190c27348085a2f` | `4c22be89e929962b2ed152d337c262f4f0bb935baa0ad04ed12bbc1306f7c582` | R3 x3 |
+| code/b5/result_ec.json | yes | `5311e470d7b35b935fc11e03b558fc53aa0418354bf977b8c32626019b33e190` | `338235bab59b10a43dc7c746e8bb55a66bcd75071e930fe0f5aa0580ba09d215` | R3 x2 |
+| code/b5/result_frw.json | no | `d1998ec807c6b34129ea283b0dbd054001a96429c67383f217c65cc8323b38bf` | `8c8977a241191cc9a4b92fd6bf91f110f444e803fb7e48f7e37182cd32904e23` | R3 x2 |
+| code/b5/run_crosscheck50_attempt1.out | no | `21ff6e48a5df2661541f063d8d73d9d255fc33a47eead3c0405811ed9cba0062` | `0251b5868c8340a8c9c79f66129fde7031808f4d43ab82b493f621ad11ce9966` | R2 x1, R8 x2 |
+| code/b5/run_null_attempt1.out | no | `22dbaa88e09985f4fbea39fad63860ef96137e9b51ce1fd5632ec26132beac8b` | `ec9917f39324880f4bf685655480e2e52ac9cd06d012107bcd36f96a5f7142ed` | R2 x4 |
+| code/b5/series.py | yes | `8ac136b173d0e7a2450def801c518909dc611f7f3c890bf18c78735ebea4de5c` | `55df51b6f6aecf30b51dc4d2127939aca61e9780d32ef9951eccc798e6633c26` | R3 x1 |
+| code/b5/solve_hp.py | no | `20ed8624c1ea32a749c5237f11877a8ea1dd68463b94bd2424e745edcfd5b6ab` | `74606e7d2001a6624e155b60d057c960eb8693670bdaa6ce661ef77321e3e3ff` | R3 x1 |
+| code/b5/sonic.py | yes | `d7cd53850a714d0a1cb4b1bfa1eb172738faba8839b14e03ab545f3e33e3dbe3` | `f9d5673210ee2156f9b7d973429aeb67c0e32bfc2c1c8e78b15ad6be2c6c99da` | R3 x1 |
+| code/b5/sonic_sym.py | no | `9f7e94690c375e2ef9d72133ceea8e13b6376a6002e1f9f78f606e00b2a0738f` | `9a0b0b61738fb806edf2925346f60dfc5b58d2fe338862b411a05a1d09f4182d` | R3 x1 |
+| code/b5/system.py | no | `f8ef837ae2090d6aec2fd4e72540f236660bbfc82f04af3567e9bff19c0524a1` | `8a37a6424f82c72030d3b894117cf54f763f3fe8d25efd71873a0f24636ad698` | R3 x2 |
+| code/b5/system2.py | no | `786da7779143757979c18938f86ff7792652b5fbfd94ce320a7719924090890d` | `0c184a3a43e6a223df4be8e299bd929cf06d595532701517933ed59b405fa20b` | R3 x2 |
+| code/b5/systems.py | yes | `7aab336240a8e6082ff87a09fe353bd10fb7d39c94b4596fa30201fd14446a6d` | `e50a0f625007649401e2c5edaea9e807640601c56f7d696be76894c7fb5b3fb7` | R3 x1 |
+| code/b5g/RUN.md | no | `601d6b39fbe2ae42a28b8f79760d3eb33a5ebfd25c2a62fabacf11700e35647b` | `66787eb667f3e82154ea3636aea41810bcccc01cd67d6c0fcf4b2b465ff5bae8` | R3 x3, R5 x9 |
+| code/b5g/bgjac_g2.py | yes | `8e08490addb6c07c21a5e1ea14c1a5d5486b4d48c0c961058b14e2bbea38d49e` | `16439f67297ad94d198f55e9ff2b77edcf78dec99d7c823e62ebc9b30ba4b353` | R3 x1 |
+| code/b5g/centre_sym.py | yes | `e42f96a276db6082b05d86b71081ef96e57d5496070b6ae44951986ffb059641` | `88449ab5a0c522cbaa314d6ece61a9f2284889680b1e39a80fdd71a8c3220d3c` | R3 x1 |
+| code/b5g/cert_g2.py | yes | `61399a0fed97142aa3a40bdb18b7bab56c753638bef9f798e8934585dfbacf27` | `9233478e2acc7c9ddea1bd7627d55ddce84a909c4b32a8a2686a87b3cab93ef1` | R3 x3 |
+| code/b5g/curio_g2.py | no | `807b13e8af12316475b3a297bc62e26242a186b09e1e67969f80ca24ab088b80` | `da3d34303d8110a8455041c769b744de1915bb89f0818ebb40dd0a3507d060aa` | R3 x1 |
+| code/b5g/dbg2_g2.py | no | `29d3754dec1430ff8e6f48bf966f6de17f0729475775b6691de02199f47cfdbe` | `4ad41b7cb52e566b5793c81e6031219af572b750699316b4dddd5c78bd2b2cc7` | R3 x1 |
+| code/b5g/dbg3_g2.py | no | `1dc690576992277040495fa62ebe513c33fcf37db9e5e3a5346daca34b5295e3` | `f6fac1417f00e6decd3bc856107d43742021487649f31dfb6f0176a9c6decbc7` | R3 x1 |
+| code/b5g/dbg4_g2.py | no | `40a8f41ae55cc86d831534b29365cad6fe13cd1c414f189038d310561d6f7b28` | `74f64091105c2527bf00334534d22c27f8865f5d751285b72316c2ef7fc96335` | R3 x1 |
+| code/b5g/dbg5_g2.py | no | `7a770df9af33b5956e5628efdf70fa501611a8d3abe06a22e7436393edcf08a1` | `7a31cfe1e1c832e068ddc9744d67ea5d3d39a115238a24b73a64ed13edc73f51` | R3 x1 |
+| code/b5g/dbg_g2.py | no | `d9462de987a892f24e2aeec13e167243d306180f23042fc3786146d2ee1c37ef` | `1c156b70dec8d98e8f8d1d54cf848a5fe62e620faa54221cdd1d1334e109bac7` | R3 x1 |
+| code/b5g/derive_g2.py | yes | `4750802ae1a9d25df26ef6e724e8e3f9e4448a7516df89b2d2be942d2700b4c1` | `07c2b124e7acd7603aa918bd2255333a5cc41569e080574eb022082cde19d66a` | R3 x1 |
+| code/b5g/diag_g2.py | no | `9d7fa6b3fa9708f255d7ec49ec3f7fc7a3859220d2685d370edead7646760d85` | `0bf2d5c25255acb1296580ae40272be7c77bd814cf7e32afb21ec373d9ed5eeb` | R3 x1 |
+| code/b5g/lohner_g2.py | yes | `0ccd10e3a99436e19a421746ec45510e42113849c096b3818811a71b05fba42f` | `abd3b69fad202bfa3944b5bdd149a5246c0437b225788ed52acce462941cade6` | R3 x2 |
+| code/b5g/make_result_g2.py | yes | `bcac0fd6d104fc03499ac3e47a236d62a9ad13dcefb1d0c2447995eec535f672` | `781b3be3a171bbfa19a5a883c0da587309a7e1856ba27271ee3b94046e8b82d0` | R3 x5 |
+| code/b5g/pipeline_g2.py | yes | `311ee215ffa12598ba8835ddd7666df81131e09470c9942385eb4b27c2642072` | `186dfb801caeb73133c9a55d593251fec582ffafa11a6361ab1c95e82b4774c6` | R3 x2 |
+| code/b5g/refine_g2.py | yes | `bb7d757b88bc3052d5ee0b5826920d16a5ea63376d8fb123c82d5bed08fd5ab8` | `88960840aee4c489b99d2f55609f41f1eb996509f618b5f3f48d58e0dfa6f28f` | R3 x2 |
+| code/b5g/sonic_sym_g2.py | yes | `179903e456b22c87172005d606043778462c5eb0264548afe80fcc12c741babb` | `8b8bbe83aed2e0651bc0a6b4fa19729579a87ecce4222799eb73fcad2ca5a755` | R3 x3 |
+| code/b5g/system_g2.py | yes | `deb401a00810d17fe37e3a77087c9a9848d69fdf333300a0daa7ecf9bcb24557` | `10f5bcd51a9a601d8f619f0e6a274c1f32cd783247c3aedfe9f9300d0e248374` | R3 x1 |
+| code/b5g/test_g2.py | no | `1281cd9d1733cf7e2e73af2afb0233235911c4c8ce14f84bc30961a247c2cfc2` | `7ab136e66887056c686c77895ce2ba470d70c12a3d147c1304e8415429d3c7e8` | R3 x1 |
+| code/engine/bg.py | yes | `cc267f83cb8a384c9cbe848c0b5f4780a013c0242a6338661a82b954ac1dbd64` | `4e95f864545035f420e05c94fda0e9e22e31e51b467912b9e16ff9d06ed59cf2` | R3 x1 |
+| code/engine/bgc.py | yes | `d98f0d324be60959856f03a97017bd06a5e346a98ff8c2b1fd77f6cd2df4241e` | `5a6e50ede9f0c5f1943c9eb76db959c64b9a8394e83f828e92f72ef01ef2159d` | R3 x1 |
+| code/engine/cert/check_struct.py | yes | `4ea204d3fc8417b2cef1a5584107c7260abc6bcd4d88f3c87c2acd88226c53c1` | `41268b740ca63dabc97d1550b68e49759df8c61c674e5928e57c06a63666a071` | R3 x2 |
+| code/engine/cert/count_b4.py | yes | `7f17adc9c0b10ec529fba28ea356296b7b3bd77dd95bd312e3bb791c4d2c7204` | `2e356929ec378586426e5fd1df7c04a5a9ccd2e8162c4e7d8af6c1ec1472148b` | R3 x3, R5 x3 |
+| code/engine/cert/count_b4v3.py | yes | `9d6db027f0ca12a2fefc6fcb716bfd36d3a5d422c971611403bcec04dd13b28f` | `36856986c07506926767457feb34f5c24387255c56c76cb7b378575569d3730f` | R3 x6 |
+| code/engine/cert/count_b4v3_seal.py | yes | `6e7d49f3e1af8e8f0a3caf32476adfd3557cee49cf7d5a067f528ab7d02f470c` | `f486ec3274b21d7f2e2324b6a4585ee3dfe3ce363a6a297ec2941e7333cde9d4` | R3 x1 |
+| code/engine/cert/driver.py | yes | `91b6eb7ba0fb59984834d1a030c5d5a1f0074bfec97010844cc6ed30ca46f4b5` | `994436257302ec507879feec999c5be42f45d3239ef7b79cab9dea9e43ed81d4` | R3 x2 |
+| code/engine/cert/driver2.py | yes | `9169e6614fc1bb8349517d4753b9fbc7032dabf4e3c1868172f295c9780737b2` | `d7118ab1893d3ab5609bf589147cfb8a31c3ca1b5823c09983fc3177cdd552e1` | R3 x2 |
+| code/engine/cert/driver_v2.py | yes | `8b2c17fc259ee6d67d0a75b25ce51483d2469e313deeeeb320951290b634233e` | `14b92394726d722172f13b39599cfdcba03e34865326d52409d336e558f45f7a` | R3 x2 |
+| code/engine/cert/driver_v3.py | yes | `84808b61fb66274692c5b5dbb344c8c04c9493649b8319bf81276cb5eb9281e2` | `cb3c53e0e2643d1e4fa6211217a2bdbddf7ecc18eeb8bd251af22bb7286b2af3` | R3 x2 |
+| code/engine/cert/driver_v31.py | yes | `0a717957670fc16cf150299aa7401e805ae2de8273eff1ac06de7df2e2220171` | `4ad03d5868a26222c26c6b9b2e7cdbf29118d6caf4b4b0bd1cb7d456dc6fd209` | R3 x2 |
+| code/engine/cert/driver_v32.py | yes | `c95d0e5f301e56114d2bae97d31bdd94c3de6e23733c88d5c004ec85c1fcd771` | `1e36dde681e35eb633481579c6daaba7e972f00d9ecc1f3fb7531206cc588cee` | R3 x2 |
+| code/engine/cert/fields.py | yes | `7ec1433829803e460d9912388b25035f1aa32c9394088cf7ada5a2beb8f5aa99` | `d2fd12fbd8adef8bb5f7150791ce7a89a73d991cac4c73f8ff6205861d22062f` | R3 x2 |
+| code/engine/cert/fw_cert.py | no | `5d3321a150c4b55db1aa4052f4197e6583d6145c2b2ad257905d24dff3752fc4` | `f6744d2c5b82b3d5a5b76dc5db3168bd134c67027ad3a052144b7144be60e6fa` | R3 x4 |
+| code/engine/cert/fw_cert2.py | no | `efa020736bcafd903e34031077a2d50016ec8a7bf71c4fb4f2bdeb46fe47b382` | `13b784031f6ef05ae20e596ddef7bad7a93be7e274e8ae5eea91ab5239dd5d72` | R3 x2 |
+| code/engine/cert/fw_cert3.py | yes | `8f71e486ff5dd80718bd2338f13268fb7ad484522ebf0fa476cbf20652d10c0e` | `ae19ea5e33e67a36a5a356e221091e32824fe88be1ac15e0989f0797933f3ed4` | R3 x3 |
+| code/engine/cert/fw_tail2.py | no | `a2ecd2ae5435cae416d10b635c4b8a9f6effd6781844363ef446770cd812ab51` | `5c050ee0d1518f1a7384e570608db331cfd1b23e86f44acddb380e92ae6f5344` | R3 x3 |
+| code/engine/cert/lin_b4_smoke3.py | yes | `45657bd361d2c18b7a2476e5f232f8b3c16f73835e8dc0618242fac9bc5f68cd` | `d6396db42d85b203d4c53ff490cc4aee22ac78deb2ffa6e0ff268edf9b706abb` | R3 x2 |
+| code/engine/cert/lin_float.py | no | `bae8983eeb4747cb8bf22d1c500885cf2488dc71a87bb300051af8726299773f` | `7fae1977436bd5015dcd40781fcdf5a66590990c94d36b4b912f7dd33f5fdd7b` | R3 x3 |
+| code/engine/cert/lin_fw4_bg.py | no | `0608034400319775d2e9c719bc3b3d7b7be4de6d85993792629cd036629ebbea` | `ddfcab52e1dfce86d6f169fe4ef793232a52bcdefe7a393d10c519ac37f9b505` | R3 x3 |
+| code/engine/cert/lin_fw4_bg3_make.py | yes | `c46259e4874bd6be733ece8a4490fc487534b85028aa957c847b5541d3525561` | `9efd9f101e583b5b083d10e4a47192f91a3864da8b473e2c1cd5a1733533c9fa` | R3 x2 |
+| code/engine/cert/lin_mc.py | yes | `ee336f0e6185a620c9d995466af69b486372716dc1f593ed56d0fc13bbcbf64d` | `97b6f2854dc1650323bf3b17a0e7647b937c3bb2250073a82f066b7ce3219047` | R3 x3 |
+| code/engine/cert/lin_stages.py | yes | `582e24236c8ff81594cb56a4c2afdb0edc9a083dfdc261cf61623f4679deb821` | `a674260cca194731f36d57e7f4cddd2b36c28c6c725ba29eb32a55e14a1e57ef` | R3 x4 |
+| code/engine/cert/lin_stages_v2.py | yes | `e477ec1f6fc3f36ec16e776c26c0516e1fa5b964ee769286d8e0c290f20bf2d5` | `b17134453ac43991dba692e3909efb8c14bdc5b38f58fb6ed69d716968436457` | R3 x3 |
+| code/engine/cert/lin_sym.py | no | `dfca4911981d24690b8ddef27ffee8a92e37425add03bb303ebd088630169e0d` | `5711cc68f9b4c8e80d58fe94ff0343a2a99d93cb3683dbe1f8f8f7077e1fea16` | R3 x2 |
+| code/engine/cert/lin_tube_v2.py | yes | `a39312d4a76008e638e850ccb8417a0261b5c6ea590619c973b143a15d73a368` | `664146e426f678b23418046f6bd11eb7eb2631d04b0f919cf44a7fdf3afa8d85` | R3 x3 |
+| code/engine/cert/pipeline.py | yes | `a5b0936b2ca6aef804c01a156a2a65229e256c1af0ac21f5fb40930788a765e1` | `964d807eee1ec6647014de2b775a75a43ae994d0df5b6f596714f7699b400a94` | R3 x3 |
+| code/engine/cert/run_v31.py | yes | `8ada5973899d50ee9b6d3a74c877d90e39733c9e768f9aeb2791fad540aa502a` | `c5034fa445afb16125f33fff71a86703b92edad53b2dcfd4324641489e80d43d` | R3 x2 |
+| code/engine/cert/run_v32.py | yes | `fcd1f159042ee76842eba1b8c71dd17c5dab84984fd0d01f6059ac6eb77d9799` | `8d425f324ca8552a331da368c674ae3d072f77e0c68dca463384aa8ac7cfee01` | R3 x2 |
+| code/engine/cert/test_lohner.py | yes | `d5295524ee1c62e911329ee8ac705aeb435e42e3c1a9313c638d34c2e21f06ba` | `9ec1b53c4e9ce87b39c9469c7e9bab71fbd71db91e0eaafc198895ad64d2cb54` | R3 x2 |
+| code/engine/cert/test_lohner2.py | yes | `752ae78c6a813375c3a0c3dc8ec085b64626b5bc390eb92bfaee5e2e7e24ac78` | `9ffa6407daae39738b8d34348051d6db9bac12be332851ea3d61ea2a91d785fc` | R3 x2 |
+| code/engine/cert/test_tails.py | yes | `cb5d3fd456d7e011907ac2b28347f53a710eedc623b65b34694a4d1491132dc5` | `651085270298e4d1bdc2ec55cf915932b27395dc4c4ce3eb3ea971ace2138da3` | R3 x2 |
+| code/engine/cert/test_tails_v31.py | yes | `e1924ab703b5f5b5aab94dbc9fbcc769220e8f6ce2ee1c736d72e517636e3e5e` | `1a7930278bb076a6db98253a5107d6e528d79e75c8c2afc963946616adb562ac` | R3 x2 |
+| code/engine/cert/test_tails_v32.py | yes | `acae22bb383604fb4baf81584757e26b3b6f4234b53f830d22291720ce256c18` | `a87582881fea501c1724f7f2b14bd84e0110b98c96743ba3589a3d635b4bf7a3` | R3 x2 |
+| code/engine/derive.py | no | `ef70536c299390c3a59a22ecd3fb43c0055366052680dbb1ac841994ec96cf69` | `aa3573ab9c869344d694714c076bd1644321262a9ff0cd9956b77545592c4ff5` | R3 x1 |
+| code/engine/system.py | yes | `34327a73a4f076f9b65f5fa68e6b3f9d7812894e0b54ecc0fcb5cac8e4606a2f` | `1b54c959634000cb05e9f1598c4c8eebe712aa08f3f178e54f6773cb0e6183d2` | R3 x1 |
+| code/lean_fw/LEAN-NOTE.md | no | `088b4a1f0369e05f35f3b37d340959de3f43eee44da79f9f27de58a90c272594` | `217542bea5ca893ee6c808cdaed13fbbd821dea8651215e61becc497a5890794` | R3 x1, R5 x4, R6 x3, R7 x4 |
+| code/lean_fw/fw_collatz_logic.lean | no | `bc6d8d78c7df3440e499a894753fbc3193b754548a898ecbe4438a48dab99de0` | `34a88d895f15ad153431aab5b51ca68e0656cbaa3d2e2cc49fc6686b3dafc6b2` | R3 x1 |
+| code/lean_fw/lean_all.py | no | `5578bba92382189b7bb1e9b105b1f901fd36f99d11e62f030c34f57bfa0490ae` | `54745a0bbbd01f63256d28da0a251d2773b64544c5ba5ca8b842b842e36cd867` | R3 x2 |
+| code/lean_fw/lean_tail.py | no | `b5d5ab6dd3c72b371d76e6d23df5689d6bb4e9cfdacfecbaf620060591d17a75` | `2f9fdefad1b8af69212714c2f88e91d0948cf1214d3ed2e1ef1b17fb02e79e60` | R3 x4 |
+| results/b5c/REFEREE-B5.md | yes | `db26b49a1fd298c39efb0b51db46b9119e2840cf2ecce264556014ffde825cd3` | `529029c9bbd3507a1faeac163d3f84fd8093d9603438bb8d7338b0cd406e831a` | R13 x1 |
+| results/b5c/RESULT.md | no | `140a763560da9e3f57138e0449dcbed0f87e1f50bd43bf97ad285220fced8330` | `ebc16eabde20c0a4c9ebdb04efc7badc98ac1ab3a30e2aec9fed808e7ce0a52d` | R3 x2 |
+| results/e5/BAR-LB-E5.md | yes | `f0c0bd719bbaa8ff357b85bb278cd5f6fab28cc971bcdbaaf58269359396faa9` | `86d319956365ae7b79a69e703e1439532dedff647303536b9a8dd93a48989454` | R12 x1 |
+| results/e5/PROPOSAL-V32.md | yes | `7ab6ddb934b67444b9efe6fb7ea4c935b4232d6041324d4d58394d57a021f3d4` | `da4b423471ed2405b7d1e099d5fce5177df8165bcb572f054cc72cd6f4636804` | R3 x1, R5 x4 |
+| results/lean/lean_check.log | no | `7a39b09221cad136d11d95b9cc115ddab2df4f1c3b431c2f4b447561b52db26f` | `72dc419be6db8c9b67c0baa87e63a80d78ff08d1a1845e7fdfb2491f1dd7e159` | R4 x1 |
+| results/lean/lean_logic_check.log | no | `946a4a646dbc4946871115613d9bde244239da7a81d007c8e2366699b76e6bd3` | `3322aa5ace3c4bb88648bffb8403a00bafb640bb579cce63300a89f69e970356` | R4 x1 |
+| results/lean/lean_logic_control.log | no | `2502e9a7c5c6a4018e0a30434ffe226f36152853d845efe37114bdccb8a0a2e2` | `197f572ab0e4b6510a65c3ebabd124063876a5f5f6e4a90ad5ffe7937213290f` | R4 x1, R9 x1, R10 x1 |
+| results/lean/lean_tail_check.log | no | `3ec4ebf06d4bb20a0775a9c924dbeeca34ff7f3bc1a6038f2213404a59dd3d41` | `02507872704707ea4e8d312bcf58afa151e83442e825e3983007b7137de6c129` | R4 x1 |
+| results/ledger-lightball.json | no | `af1bd83c1d44ade3ed98862320b5056c781492316f84540f08704c54c25e3471` | `1d2adac7240e57d6d9df11b954fc646a3844b6f529742b0f7f1f80ac1d118955` | R4 x118 |
+| results/m/PROOF-B4-v4-AMEND1.md | no | `a07b116a64f2cbe0b93f89ae2f2766d704259474caa05ee892b3aaabd065dd6b` | `2116757fed5f17fc45da3afc69f2424edfdad0ae0c98be79f4e88654146f35bc` | R6 x1, R7 x1 |
+| results/m/PROPOSAL-B4-SPEEDUP.md | yes | `d80390cea397f184c0e4e56c5c3766571895c1c124d3f662005822df6672e381` | `af3f27bad0f7a61f853814511923e3a3c75793f34ab51c4b60aa38eb01f22537` | R3 x1, R5 x6 |
+| results/m/runs6/fw_cert3_M2.5_Ka40_K55.log | yes | `b58013270c01a6c4cf5c793815af6a5fa34dc1bf502d76c0dbb608d898be421a` | `77d0cb0273431d2863c1871f82eec739c0f31c036f0f8ad953d6fadb25ae70f0` | R5 x1 |
+| results/m/runs6/fw_cert3_M3.5_Ka55_K2000.log | yes | `5ce474e11b2b6a1caf361305c3d26db095c224b0dd905540e782bce01847f54e` | `07dfa9710a9ae62f3b4788fb2e1f7cac6c0bc39e4903e5bb498d2f76b2fb2263` | R5 x1 |
+| results/m/runs6/fw_tail2_KT2000.log | no | `44a26849cd6ba27c5c8dbee460911ebbdfb5918cea2b8caabf7b792062d60abd` | `31fe0ed59761065260dc7f9043de458e9619001e0e6aff64f47e02d5cd0ce387` | R5 x1 |
+| results/m/runs6/fw_tail2_ctl.log | no | `8f440f275fc7875a550f42b22d6045afb942f740153de7b4701ffa72381e392f` | `3a5ce47a5cba8301fdd2b9a750f2ac250480c66a04c4352f8f81b566c7987b47` | R5 x1 |
+| results/m/runs7/count_R40.log | yes | `a1f1f5f3f9d4862b652c2e38e5fafe573a270186ea395304489ab35d30607b4d` | `5787d6cba94812af73292006a094fea4670fc1b634f2ebf80e8a4f42c60f4e78` | R3 x1 |
+| results/m/runs7/ctl_C1.log | yes | `671ef28b51c5b2ae62f7744f47fa3210c69554546d5be54a86386eb399a37aa9` | `eadb51cc21f49768877ce1cc4f345c5bcfb7ca40474a568056c3b3c2529bb7b0` | R3 x1 |
+| results/m/runs7/ctl_R3.log | yes | `64f5758b27fb7275c2a1ceb4968c4d20e37ae8f8fe5ad9d19509a8f018c13f37` | `3edb26c3dd67f39fe9d64ebb1245f5f0c65787ceae3836d36dd4a72e69cf1318` | R3 x1 |
+| results/m/runs7/kstar.log | yes | `4dbe4d4b8f6beb2b491fe5e13f5e2000c56f46b4ead90e4a88bdd2be6709c5b1` | `cb2ed72dfc8ca6b7617880f8be33ee3d3ba82fa83a440d7d7b31227357bd25ec` | R3 x1 |
+| results/m/runs7/run_m.sh | no | `598d090d2d8fe9efa505ec1489cf8f555f8b641649a0d44d83da6d7754d53457` | `362821097b641b162af7c083a6ac99bf5011f3334f72546ce2cf4f2ac231f9a7` | R3 x1, R5 x1 |
+| results/pickles/gen_tube2_12.log | no | `c2905b2459404a4e8ef2b9397a12304238aa60b9183fa322a1d6a729c1e7aed4` | `caa023b4523f9d0588145f37db1507fc6cc25c716c3a365ed38213f673f393d8` | R3 x1 |
+| results/pickles/gen_tube2_13.log | no | `c1c6a21609c850143d9a7a1b2056b689369e1ea2bf3c93048d5192ba04452fdf` | `6c982f84b7f9a5d02103cba4ae341689b0879a8fa74f6e140b247b08d61c0c4b` | R3 x1 |
+
+Pinned = the original sha256 is pinned by a lab ledger row of one of the four seals (`tools/pins.json`). For
+the other files the original sha256 is the lab file as it stood when this repository was assembled.
+`results/ledger-lightball.json` is the ledger rows of the four seals and their amendments, written out for this
+repository (one JSON array); its original is that array before patching.

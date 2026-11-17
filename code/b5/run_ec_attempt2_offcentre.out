@@ -1,0 +1,13 @@
+[    0.4s] sonic head at centre zs computed; class saddle lam [0.164293492238 +/- 4.76e-13]
+[    1.8s] sonic endpoints done in 1.4s; theta* = [-0.0376540628433793 +/- 3.98e-17], tail r = ['[9.39e-70 +/- 3.08e-74]', '[1.85e-69 +/- 3.65e-72]', '[1.18e-69 +/- 1.02e-72]']
+[   23.5s] sonic sub-boxes done (32)
+[  665.0s] thin centre runs done in 633.5s; G_mid = ['[0.17841870665968503359 +/- 8.11e-22]', '[0.10507165494145134321 +/- 3.77e-21]']
+[ 3009.4s] box centre run (variational) done: dG/dsig = ['[-0.008830984017 +/- 1.16e-13]', '[0.01322571963 +/- 1.34e-12]'] ; steps 111
+[ 3009.6s] cache write+reload test: False True
+[ 3009.6s] G radii: lo [6.02000002452689e-44, 1.8600000076668717e-43] mid [7.61000002062687e-44, 3.650000013572311e-43] box [3.810000016668983e-21, 1.3300000032315331e-20, 1.9700000041260487e-19, 3.5300000091463296e-19]
+[ 3009.6s] Jacobian (num) = [[-0.008830984017115368, -1.712901362591277], [0.013225719628660577, 3.951174374490157]] cond-ish 0.01223840457677549
+[ 3009.6s] C2.dG/dsig = [+/- 7.86e-19]
+[ 3009.6s] Miranda: H1 signs on sig_lo face {-1} sig_hi face {-1} | H2 sign zs_lo -1 zs_hi -1 => False
+[ 3009.6s]   H1(lo) worst -6.244005416046927e-35 H2 lo/hi [-3.413e-39 +/- 6.58e-43] [-3.213e-39 +/- 6.58e-43]
+[ 3009.6s] MIRANDA FAILED
+memcap: exit 2, peak 0.07 GB of 8.00 GB cap

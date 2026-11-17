@@ -1,0 +1,17 @@
+tail_bound code: v3.1 (R7 installed)
+sealed sonic: K=16 nu=0.004 N2=192 ngrid=24  eps=[1.8553e-32 +/- 4.82e-37] epsX=[2.0911e-33 +/- 3.53e-38]
+sealed centre: K=60 nu=0.03  eps=[3.2864e-56 +/- 3.76e-61] epsX=[2.1713e-56 +/- 3.35e-61]  [1.8s]
+  sonic theta=-0.95*nu x=-0.0038289527  max|cert - mp90| = 3.661e-35  (= 0.00197 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  sonic theta= -0.9*nu x=-0.0036259738  max|cert - mp90| = 1.459e-35  (= 0.000787 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  sonic theta= -0.5*nu x=-0.0020079884  max|cert - mp90| = 6.65e-40  (= 3.58e-8 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  sonic theta=  0.3*nu x=0.0011971443  max|cert - mp90| = 1.117e-43  (= 6.02e-12 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  sonic theta=  0.9*nu x=0.0035744325  max|cert - mp90| = 1.434e-35  (= 0.000773 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  sonic theta= 0.95*nu x=0.0037715251  max|cert - mp90| = 3.592e-35  (= 0.00194 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  centre theta= 0.1*nu  max|cert - mp90| = 1.95e-61  (= 5.93e-6 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  centre theta= 0.5*nu  max|cert - mp90| = 4.066e-60  (= 0.000124 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  centre theta= 0.9*nu  max|cert - mp90| = 1.478e-60  (= 4.5e-5 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+  centre theta=0.95*nu  max|cert - mp90| = 2.663e-60  (= 8.1e-5 eps)  referr 0.0  OK  | TRUNC(K-1) flagged: False
+INJ control (shift 3*allow must be flagged at every component): missed 0 of 30 -> PASS
+TRUNC control (K-1 truncation flagged at 0 of 10 points)
+TAIL CHECK (sealed parameters, mp 90 digits): PASS  total 38.7s
+memcap: exit 0, peak 0.10 GB of 8.00 GB cap

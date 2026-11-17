@@ -1,0 +1,33 @@
+[    0.0s] [v3] count_b4v3 count: ctx.cap 32, N_ARC 8, R_RULE [(2.0, 0.25), (5.0, 0.4), (90.0, 0.5)], R_RIGHT 1, R_EDGE_RE 5, shape halfdisc, frame A1, prec 128, m 16 J 4 nsub 2 tol 1e-20 REFINE 3, LB_CACHE13 <LAB>/b4speed/L13_nsub2.pkl, LB_R_FIXED None, LB_MAXDISCS None
+[    0.0s] [seal F1] arc: 8 chords, vertex radius 3.01451571713195; EXACT: min chord distance^2 - R1^2 = 1.800e-11 >= 0, max vertex |k| = 3.0145157171 <= 55
+[    0.0s] [seal F1] plan: 15 pieces, exactly continuous, starts at the vertex (3.014515717131949+0j), ends at 0; every piece <= 2r
+[    0.1s] [seal F5] header: {"header": true, "R1": 3.0, "shape": "halfdisc", "N_ARC": 8, "R_RULE": [[2.0, 0.25], [5.0, 0.4], [90.0, 0.5]], "R_RIGHT": 1.0, "R_EDGE_RE": 5.0, "M": 16, "J": 4, "NSUB": 2, "TOL": 1e-20, "REFINE": 3, "ndisc_plan": 15, "engine": {"engine/cert/count_b4.py": "7f17adc9c0b10ec529fba28ea356296b7b3bd77dd95bd312e3bb791c4d2c7204", "engine/cert/count_b4v3.py": "9d6db027f0ca12a2fefc6fcb716bfd36d3a5d422c971611403bcec04dd13b28f", "engine/cert/count_b4v3_seal.py": "6e7d49f3e1af8e8f0a3caf32476adfd3557cee49cf7d5a067f528ab7d02f470c", "engine/cert/lin_tm_v3.py": "54c1e2f7f2defad39483f3de6af9774212b2b78da2d9f416234598255708f4a3", "engine/cert/lin_tm_v2.py": "80b6a52355e28605a8f6d72784fa025ddac354733c413191cb086f84f60985d1", "engine/cert/lin_tm.py": "98a06289ee5db85f16c7610968754b4a9c5a38417ec4efe1cf2a5273bf6411c9", "engine/cert/lin_stages_v2.py": "e477ec1f6fc3f36ec16e776c26c0516e1fa5b964ee769286d8e0c290f20bf2d5", "engine/cert/lin_stages.py": "582e24236c8ff81594cb56a4c2afdb0edc9a083dfdc261cf61623f4679deb821", "engine/cert/core.py": "932a32b5f6b23f416147ce112b3a51e2d840b855fea79b339fdc397d3ca88f85", "engine/cert/lin_fields2.pkl": "dce8eba80ec94e1dff72d4187f17029cd3a0e62ae65f3e71e41658ed7761fc26", "engine/cert/lin_tube2_k1_3.pkl": "f6bff9e203c8a4e054a35bff0453d179d570dca6bd520665b900cb2b2c3071df", "b4speed/cacheL.py": "a0489e264e31f61a9934b0089644025048adcc304c7e2401031c61c9e8b98533", "b4speed/L13_nsub2.pkl": "c239cbe5347059080ea3c4144b8c5a65133cb4c4812a280096c8f5116dfbb782"}, "frame": "A1", "prec": 128, "cap": 32, "cache": "L13_nsub2.pkl", "cache_sha": "c239cbe5347059080ea3c4144b8c5a65133cb4c4812a280096c8f5116dfbb782"}
+[    0.1s] [seal F5] fresh ledger runs7/ctl_R3.jsonl with header
+[    0.6s] stage S ready (0s)
+[    1.0s] centre ready (1s)
+[    5.1s] stage L ready: 1440 steps (5s)
+[    5.1s] [v3] engine: CachedLinear2(L13_nsub2.pkl, sha256 verified c239cbe53470), prec set to 128 after setup, TM frame A1
+[    5.1s] [seal F3] c_V(x_m) on the tube end box at xbar = [-4.600000000 +/- 3e-14]: [0.19288155165634 +/- 1.41e-15]  (nonzero: True)
+[    5.1s] [seal F3] Abar_ss'(0) = [-0.198928186801772 +/- 4.57e-16]  (nonzero: True)
+[    5.1s] [seal F3] detA(0) = [-0.1815502685 +/- 1.83e-11], detA(1) = [-2.014852817 +/- 1.32e-10], second difference [+/- 1.52e-13]; affine root = [-0.0990290820550 +/- 2.91e-14]
+[    5.1s] [seal F3] iw == 2 at all 31 plan points (endpoints + centres): True; run-time guards installed on sonic_tm, detA, sonic_start
+[    9.0s] D(0) = [-108.527 +/- 2.76e-4] + [+/- 2.38e-12]j   D(Rp=3.014515717131949) = [0.653570 +/- 3.73e-7] + [+/- 2.43e-14]j
+[   49.1s] disc [2.9856 +/- 4.59e-5] + [0.29405 +/- 1.43e-6]j r=0.4  R=[1.11e-6 +/- 8.25e-10]  arg [1.6205833 +/- 1.70e-8]  (40s)
+[   87.1s] disc [2.8708 +/- 2.11e-5] + [0.87085 +/- 4.04e-6]j r=0.4  R=[1.13e-5 +/- 1.01e-8]  arg [0.53897250 +/- 9.25e-9]  (38s)
+[  125.7s] disc [2.6458 +/- 3.63e-5] + [1.4142 +/- 9.80e-6]j r=0.4  R=[3.20e-5 +/- 4.03e-8]  arg [0.3922679 +/- 2.54e-8]  (39s)
+[  164.3s] disc [2.3190 +/- 3.14e-5] + [1.9032 +/- 2.02e-5]j r=0.4  R=[0.000147 +/- 2.40e-7]  arg [0.30729281 +/- 6.76e-9]  (39s)
+[  202.6s] disc [1.9032 +/- 2.02e-5] + [2.3190 +/- 3.14e-5]j r=0.4  R=[0.000266 +/- 1.04e-7]  arg [0.2239526 +/- 2.10e-8]  (38s)
+[  241.4s] disc [1.4142 +/- 9.80e-6] + [2.6458 +/- 3.63e-5]j r=0.4  R=[0.000480 +/- 3.35e-7]  arg [0.1336561 +/- 2.36e-8]  (39s)
+[  280.1s] disc [0.87085 +/- 4.04e-6] + [2.8708 +/- 2.11e-5]j r=0.4  R=[0.000480 +/- 3.20e-7]  arg [0.0362466 +/- 5.47e-8]  (39s)
+[  318.8s] disc [0.29405 +/- 1.43e-6] + [2.9856 +/- 4.59e-5]j r=0.4  R=[0.000509 +/- 1.45e-7]  arg [-0.0660306 +/- 3.13e-8]  (39s)
+[  357.7s] disc [2.6945 +/- 1.58e-5]j r=0.4  R=[0.000934 +/- 4.90e-7]  arg [-0.2129983 +/- 4.23e-8]  (39s)
+[  395.7s] disc [2.1745 +/- 1.58e-5]j r=0.25  R=[5.28e-7 +/- 7.22e-11]  arg [-0.0893235 +/- 1.99e-8]  (38s)
+[  432.8s] disc [1.7745 +/- 1.58e-5]j r=0.25  R=[7.63e-7 +/- 4.77e-10]  arg [-0.0488683 +/- 5.77e-8]  (37s)
+[  468.9s] disc [1.3745 +/- 1.58e-5]j r=0.25  R=[1.92e-6 +/- 4.22e-9]  arg [-0.0017978 +/- 4.23e-8]  (36s)
+[  505.1s] disc [0.97452 +/- 4.29e-6]j r=0.25  R=[4.51e-6 +/- 4.44e-9]  arg [0.05271291 +/- 5.96e-9]  (36s)
+[  541.0s] disc [0.57452 +/- 4.29e-6]j r=0.25  R=[4.93e-6 +/- 2.17e-10]  arg [0.11121748 +/- 6.86e-9]  (36s)
+[  575.8s] disc [0.18726 +/- 2.15e-6]j r=0.25  R=[1.59e-6 +/- 3.71e-9]  arg [0.14370885 +/- 4.29e-9]  (35s)
+[  575.8s] N(R1=3) = 1   (Delta/pi = [1.0000000 +/- 3.42e-8]; parity (-1)^N = sign D(0) sign D(Rp): True; refinements 0; iw guard calls 49)
+[  575.8s] [seal] preconditions: c_V(x_m) = [0.19288155165634 +/- 1.41e-15], detA root = [-0.0990290820550 +/- 2.91e-14], Abar_ss'(0) = [-0.198928186801772 +/- 4.57e-16]
+memcap: exit 0, peak 1.12 GB of 8.00 GB cap
+rc=0

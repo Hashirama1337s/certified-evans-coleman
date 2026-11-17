@@ -1,0 +1,16 @@
+[    0.9s] nu_s=0.004 contracts over the box: eps=[1.46e-26 +/- 3.82e-29] epsX=[1.67e-27 +/- 4.67e-30] L*=[7.50 +/- 3.54e-3]
+[    0.9s] nu_s = 0.004
+[   46.1s]   tau step 50 x=-0.03194 h=0.008553 width=[3.29e-15 +/- 6.18e-19] t=39.4s
+[   89.6s]   lohner step 50 x=-0.0894 h=0.0008553 width=[5.02e-15 +/- 7.21e-19] t=32.7s
+[  121.9s]   lohner step 100 x=-0.1587 h=0.001829 width=[9.64e-15 +/- 3.69e-18] t=65.0s
+[  154.1s]   lohner step 150 x=-0.2739 h=0.00391 width=[1.67e-14 +/- 1.64e-17] t=97.2s
+[  186.9s]   lohner step 200 x=-0.4498 h=0.004181 width=[2.27e-14 +/- 4.25e-18] t=129.9s
+[  225.8s]   lohner step 250 x=-0.7119 h=0.004469 width=[3.15e-14 +/- 4.91e-17] t=168.8s
+[  262.1s]   lohner step 300 x=-1.0364 h=0.004778 width=[1.10e-13 +/- 3.51e-16] t=205.1s
+[  294.0s]   lohner step 350 x=-1.3785 h=0.005109 width=[2.38e-13 +/- 2.45e-17] t=237.1s
+[  328.8s]   lohner step 400 x=-1.7548 h=0.01092 width=[4.77e-13 +/- 3.61e-16] t=271.9s
+[  364.0s]   lohner step 450 x=-2.1982 h=0.01168 width=[1.03e-12 +/- 1.89e-15] t=307.0s
+[  397.4s]   lohner step 500 x=-2.7133 h=0.01248 width=[2.53e-12 +/- 1.09e-15] t=340.5s
+[  431.6s]   lohner step 550 x=-3.2949 h=0.01335 width=[7.26e-12 +/- 2.04e-15] t=374.6s
+[  437.1s] residual done: margin = [1.39e-27 +/- 4.64e-30]  Erad = [1.93e-24 +/- 7.16e-28]
+[  437.1s] saved lin_fw4_bg.pkl: tau steps 65, x steps 558

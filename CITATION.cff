@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent"
+authors:
+  - name: "Moki & Julio"
+version: "1.0"
+license: CC-BY-4.0
+keywords:
+  - critical collapse
+  - Evans-Coleman solution
+  - radiation fluid
+  - self-similar solutions
+  - Einstein-Euler equations
+  - critical exponent
+  - linear stability
+  - computer-assisted proof
+  - interval arithmetic
+  - rigorous numerics
+abstract: >-
+  The Evans-Coleman solution is the continuously self-similar critical solution for the spherical collapse of a
+  radiation fluid (p = rho/3). We give an interval-arithmetic (computer-assisted) certificate that a solution with its
+  defining properties exists (regular centre, analytic saddle sonic crossing, one zero of V, continuation to t = 0),
+  with KHA sonic velocity V0 in [0.1124394013880983362 +- 3.31e-20], and a blind second proof by a different method whose
+  enclosure agrees to 19 digits; local uniqueness is not claimed. On it, an exact gauge deflation, an argument-principle
+  count on a half-disc of radius 40 and a certified a-priori bound for all |kappa| >= 40 show exactly one growing
+  non-gauge spherical linear mode (analytic through the sonic point) in Re kappa >= 0, with kappa* in
+  [2.810552549 +- 3.83e-10] and gamma = 1/kappa* in [0.3558019224 +- 6.97e-11]. A blind second computation (different gauge and code) on the B5 solution encloses a real growth rate in
+  [2.8105525488272 +- 7.32e-14], inside the first (certified, beyond the sealed bar). If the two solutions coincide
+  (not claimed), the value 2.8105525488 printed in the table of Hara, Koike and Adachi (1996) is correct to its last
+  digit and two further digits are certified. Every sealed test is listed, including
+  three FAILED and one VOID existence attempt.

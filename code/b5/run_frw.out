@@ -1,0 +1,15 @@
+[    0.4s] sonic head at centre zs computed; class node lam [0.204187040286 +/- 4.46e-13]
+[    1.8s] sonic endpoints done in 1.4s; theta* = [-0.00610525363880741 +/- 3.72e-18], tail r = ['[4.48e-116 +/- 4.05e-119]', '[1.31e-113 +/- 3.21e-116]', '[2.55e-114 +/- 4.32e-117]']
+[   20.7s] sonic sub-boxes done (32)
+[   28.3s] centre cache found: reusing enclosures (arb strings)
+[   28.3s] G radii: lo [7.340000021574005e-72, 4.750000024877007e-72] mid [8.810000020839026e-72, 5.820000022047121e-72] box [5.36000002585625e-23, 5.710000027765387e-23, 6.830000025591589e-20, 3.190000014887342e-20]
+[   28.3s] Jacobian (num) = [[-0.05782287961175188, -0.3861577958277795], [0.6531853529472911, 2.501551364594327]] cond-ish 0.10758571276356468
+[   28.3s] C2.dG/dsig = [6.0e-17 +/- 8.86e-19]
+[   28.3s] Miranda: H1 signs on sig_lo face {-1} sig_hi face {1} | H2 sign zs_lo -1 zs_hi 1 => True
+[   28.3s]   H1(lo) worst -9.968516200850276e-30 H2 lo/hi [-1.0000e-35 +/- 3e-44] [1.0000e-35 +/- 3e-44]
+[   28.3s] certified: sig0 in [0.2962962962962962962962962963 +/- 1.38e-29]  zs in [0.909137290096989674229657036992 +/- 5.13e-32]  V_s in [-0.565685424949238019520675489684 +/- 1.21e-31]
+[   28.3s] sonic point type node eigenvalues [0.20418704028555475518 +/- 3.31e-21] [0.16334963222844380414 +/- 1.36e-21] (third = 0 exactly)
+[   28.3s] inner part (centre -> zm): V zeros = 0 final sign -1 checks {'mu_lt_1': True, 'P_neg': True, 'V2_lt_1': True}
+[   28.4s] sonic piece: V range [-0.565 +/- 6.86e-4] checks ok True
+[   28.4s] DONE
+memcap: exit 0, peak 0.07 GB of 8.00 GB cap

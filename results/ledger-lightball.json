@@ -1,0 +1,697 @@
+[
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/bar-lb-b5c.md",
+    "sha256": "05ccbe582246239ea5d0b7dc2925cd84b8c498f3f1abeb9f85df36327f0d0dc9",
+    "bytes": 2497
+   }
+  ],
+  "tag": "LIGHTBALL-B5C",
+  "note": null,
+  "sealed_at": "2026-11-16T17:13:15+00:00",
+  "seal_fields": {
+   "<lab>/bar-lb-b5c.md": {
+    "formula_refs": [
+     {
+      "path": "<lab>/seats/referee-b5.md",
+      "lines": [
+       1,
+       120
+      ],
+      "sha256": "db26b49a1fd298c39efb0b51db46b9119e2840cf2ecce264556014ffde825cd3"
+     }
+    ],
+    "depends_on": [
+     "7928715efe"
+    ],
+    "tolerances": "interval arithmetic"
+   }
+  },
+  "sha256": "71904980c4f8b3f776a7602033029eaff1b2cc1548673e74f737b271dcb0e8fe",
+  "id": "71904980c4"
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/amend-lb-b5c-1.md",
+    "sha256": "f8a0afacf0515fbb841869c553a671acb92a8b98c628d8ae1cf9b6b6ec5091d9",
+    "bytes": 2094
+   }
+  ],
+  "tag": "LIGHTBALL-B5C",
+  "note": null,
+  "sealed_at": "2026-11-16T17:26:21+00:00",
+  "amends": "71904980c4",
+  "sha256": "bee365c7027efb87f19076bf0df888e45a928fc34838abc87e6059271582f983",
+  "id": "bee365c702"
+ },
+ {
+  "kind": "pin",
+  "seal_id": "71904980c4",
+  "files": [
+   {
+    "path": "<lab>/b5/close_b5.py",
+    "sha256": "6c582b7ab485795892492bb5fa76e66930875d31f6d8a49740cfec81e102c6fc"
+   },
+   {
+    "path": "<lab>/b5/systems.py",
+    "sha256": "7aab336240a8e6082ff87a09fe353bd10fb7d39c94b4596fa30201fd14446a6d"
+   },
+   {
+    "path": "<lab>/b5/sonic.py",
+    "sha256": "d7cd53850a714d0a1cb4b1bfa1eb172738faba8839b14e03ab545f3e33e3dbe3"
+   },
+   {
+    "path": "<lab>/b5/rigode.py",
+    "sha256": "a6161a4890db7866d78a72af7795773bb58a763f666368e6ee39df2965ab11e0"
+   },
+   {
+    "path": "<lab>/b5/cheb.py",
+    "sha256": "b21ad735fd80ac73105118dbf99b0a2aaa66443e4705a8aefa20340de3c27ab5"
+   },
+   {
+    "path": "<lab>/b5/prove.py",
+    "sha256": "f62857344448b4250f14c7e0d90dfa78ea060df679986cd3bd78e03796edcc56"
+   },
+   {
+    "path": "<lab>/b5/series.py",
+    "sha256": "8ac136b173d0e7a2450def801c518909dc611f7f3c890bf18c78735ebea4de5c"
+   },
+   {
+    "path": "<lab>/b5/system2.json",
+    "sha256": "282703a29f67370678e0f247321fe25e7fc96ad881284387928c5a424437864d"
+   },
+   {
+    "path": "<lab>/b5/sonic_sym.json",
+    "sha256": "811263c954b6e1afd8e54057f8f4e616d84f82d8dc43ed0adfa1e05966cd5bf1"
+   },
+   {
+    "path": "<lab>/b5/cfg_ec.json",
+    "sha256": "5ea82344f80880b113ff9e7a6d16e50aaae3af708d580c0bec0227d25e39d480"
+   },
+   {
+    "path": "<lab>/b5/hp_1_3_refined.json",
+    "sha256": "5f7a9cb06656c830e3506d9d710ad673531afd68eb6ae922f25b6fc5b006780e"
+   },
+   {
+    "path": "<lab>/b5/result_ec.json",
+    "sha256": "5311e470d7b35b935fc11e03b558fc53aa0418354bf977b8c32626019b33e190"
+   },
+   {
+    "path": "<lab>/b5/result_ec_centre_cache.json",
+    "sha256": "6b51d8f6df02de5db0dfba2887cf26e483a0275080baf277ca3a0233b2b313fc"
+   },
+   {
+    "path": "<lab>/b5/result_frw_centre_cache.json",
+    "sha256": "888cc905c2f97d28e8201f7267cbe7d9e47855a67b6946f04a12a0f0a6161945"
+   },
+   {
+    "path": "<lab>/b5/run_ec.out",
+    "sha256": "5639ed7262d5e9f547eb94040d4185b3a48eb299efbf5ac4d4c079e5361568fe"
+   }
+  ],
+  "at": "2026-11-16T17:26:22+00:00"
+ },
+ {
+  "kind": "settle",
+  "seal_id": "71904980c4",
+  "seal_sha256": "71904980c4f8b3f776a7602033029eaff1b2cc1548673e74f737b271dcb0e8fe",
+  "outcome": "HOLD",
+  "measured": "Under AMEND-LB-B5C-1: C1 outer sonic stretch theta in [0, 0.0311] 0 ambiguous/0 violated; C2 det C = -81.71 certified; C3 P<0 on [0,0.05] over the sigma0 box; C4 20/20 cache objects contain their reloads; C5' FRW k=1/2 outer leg to the horizon contains exact Omega=24/25, V=-4/5; neg' certified V sign change. Remaining disclosed gap: far t=0 leg has no exact positive control. Wording: B5 independently proves a k=1/3 solution (centre-regular, analytic saddle sonic crossing, one V zero, reaches t=0); uniqueness not claimed; agreement with the first implementation POST HOC.",
+  "settled_at": "2026-11-16T17:33:59+00:00",
+  "results": [
+   {
+    "path": "<lab>/b5/close_sealed.log",
+    "sha256": "116a0995867e396f08656a08b1f73a5540f76b6d43104fdfc522dbfcc3f3a62f"
+   }
+  ]
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/bar-lb-e5.md",
+    "sha256": "f0c0bd719bbaa8ff357b85bb278cd5f6fab28cc971bcdbaaf58269359396faa9",
+    "bytes": 3843
+   }
+  ],
+  "tag": "LIGHTBALL-E5",
+  "note": null,
+  "sealed_at": "2026-11-16T17:48:03+00:00",
+  "seal_fields": {
+   "<lab>/bar-lb-e5.md": {
+    "formula_refs": [
+     {
+      "path": "<lab>/proposal-v32.md",
+      "lines": [
+       1,
+       78
+      ],
+      "sha256": "7ab6ddb934b67444b9efe6fb7ea4c935b4232d6041324d4d58394d57a021f3d4"
+     }
+    ],
+    "depends_on": [
+     "7928715efe",
+     "8aec628fd2",
+     "921909428f",
+     "71904980c4"
+    ],
+    "instruments": [
+     {
+      "path": "<lab>/engine/cert/run_v32.py",
+      "sha256": "fcd1f159042ee76842eba1b8c71dd17c5dab84984fd0d01f6059ac6eb77d9799"
+     },
+     {
+      "path": "<lab>/engine/cert/driver_v32.py",
+      "sha256": "c95d0e5f301e56114d2bae97d31bdd94c3de6e23733c88d5c004ec85c1fcd771"
+     },
+     {
+      "path": "<lab>/engine/cert/test_tails_v32.py",
+      "sha256": "acae22bb383604fb4baf81584757e26b3b6f4234b53f830d22291720ce256c18"
+     }
+    ],
+    "tolerances": "interval arithmetic; radius cap within BAR-LB-E width <= 1e-6",
+    "toy_model": "flat Friedmann"
+   }
+  },
+  "sha256": "d0af75803f5c350f948cdd30a1a71bccfe3b5638b7f51a34d3030f1876ce8f78",
+  "id": "d0af75803f"
+ },
+ {
+  "kind": "pin",
+  "seal_id": "d0af75803f",
+  "files": [
+   {
+    "path": "<lab>/proposal-v32.md",
+    "sha256": "7ab6ddb934b67444b9efe6fb7ea4c935b4232d6041324d4d58394d57a021f3d4"
+   },
+   {
+    "path": "<lab>/engine/cert/run_v32.py",
+    "sha256": "fcd1f159042ee76842eba1b8c71dd17c5dab84984fd0d01f6059ac6eb77d9799"
+   },
+   {
+    "path": "<lab>/engine/cert/driver_v32.py",
+    "sha256": "c95d0e5f301e56114d2bae97d31bdd94c3de6e23733c88d5c004ec85c1fcd771"
+   },
+   {
+    "path": "<lab>/engine/cert/test_tails_v32.py",
+    "sha256": "acae22bb383604fb4baf81584757e26b3b6f4234b53f830d22291720ce256c18"
+   },
+   {
+    "path": "<lab>/engine/cert/driver_v31.py",
+    "sha256": "0a717957670fc16cf150299aa7401e805ae2de8273eff1ac06de7df2e2220171"
+   },
+   {
+    "path": "<lab>/engine/cert/run_v31.py",
+    "sha256": "8ada5973899d50ee9b6d3a74c877d90e39733c9e768f9aeb2791fad540aa502a"
+   },
+   {
+    "path": "<lab>/engine/cert/test_tails_v31.py",
+    "sha256": "e1924ab703b5f5b5aab94dbc9fbcc769220e8f6ce2ee1c736d72e517636e3e5e"
+   },
+   {
+    "path": "<lab>/engine/cert/test_lohner2.py",
+    "sha256": "752ae78c6a813375c3a0c3dc8ec085b64626b5bc390eb92bfaee5e2e7e24ac78"
+   },
+   {
+    "path": "<lab>/engine/cert/core.py",
+    "sha256": "932a32b5f6b23f416147ce112b3a51e2d840b855fea79b339fdc397d3ca88f85"
+   },
+   {
+    "path": "<lab>/engine/cert/fields.py",
+    "sha256": "7ec1433829803e460d9912388b25035f1aa32c9394088cf7ada5a2beb8f5aa99"
+   },
+   {
+    "path": "<lab>/engine/cert/fields.pkl",
+    "sha256": "736818c02663152307cfefc5b9a3ecb0aa1d5cdf6619858cd453f63e3b368d3b"
+   },
+   {
+    "path": "<lab>/engine/cert/param.py",
+    "sha256": "7d8b6751d5668a15d27f4b8b1e8a07850dad719b029fa3d93fcea389f0a87bd0"
+   },
+   {
+    "path": "<lab>/engine/cert/taylor.py",
+    "sha256": "674f03480383c9fe6d0cdbf123ee11578535368b102c1f65778ce71a6184c663"
+   },
+   {
+    "path": "<lab>/engine/cert/lohner.py",
+    "sha256": "a5f70be48612786384d56cdf1be7b89072492b876060cdfb604c67edd0311b62"
+   },
+   {
+    "path": "<lab>/engine/cert/lohner2.py",
+    "sha256": "cdbcbc3ed708a132ca441f9f1ae4877a575c990a3b8abce629607e1665fe40b5"
+   },
+   {
+    "path": "<lab>/engine/cert/pipeline.py",
+    "sha256": "a5b0936b2ca6aef804c01a156a2a65229e256c1af0ac21f5fb40930788a765e1"
+   },
+   {
+    "path": "<lab>/engine/cert/driver.py",
+    "sha256": "91b6eb7ba0fb59984834d1a030c5d5a1f0074bfec97010844cc6ed30ca46f4b5"
+   },
+   {
+    "path": "<lab>/engine/cert/driver2.py",
+    "sha256": "9169e6614fc1bb8349517d4753b9fbc7032dabf4e3c1868172f295c9780737b2"
+   },
+   {
+    "path": "<lab>/engine/cert/driver_v2.py",
+    "sha256": "8b2c17fc259ee6d67d0a75b25ce51483d2469e313deeeeb320951290b634233e"
+   },
+   {
+    "path": "<lab>/engine/cert/driver_v3.py",
+    "sha256": "84808b61fb66274692c5b5dbb344c8c04c9493649b8319bf81276cb5eb9281e2"
+   },
+   {
+    "path": "<lab>/engine/cert/test_tails.py",
+    "sha256": "cb5d3fd456d7e011907ac2b28347f53a710eedc623b65b34694a4d1491132dc5"
+   },
+   {
+    "path": "<lab>/engine/cert/test_lohner.py",
+    "sha256": "d5295524ee1c62e911329ee8ac705aeb435e42e3c1a9313c638d34c2e21f06ba"
+   },
+   {
+    "path": "<lab>/engine/cert/check_struct.py",
+    "sha256": "4ea204d3fc8417b2cef1a5584107c7260abc6bcd4d88f3c87c2acd88226c53c1"
+   },
+   {
+    "path": "<lab>/engine/system.py",
+    "sha256": "34327a73a4f076f9b65f5fa68e6b3f9d7812894e0b54ecc0fcb5cac8e4606a2f"
+   },
+   {
+    "path": "<lab>/engine/eqs_gen.py",
+    "sha256": "26e4f83a98e9dea13beeea9ec30815f0668d73669b71b379b51738f00f1cc74e"
+   },
+   {
+    "path": "<lab>/engine/bg.py",
+    "sha256": "cc267f83cb8a384c9cbe848c0b5f4780a013c0242a6338661a82b954ac1dbd64"
+   },
+   {
+    "path": "<lab>/engine/bgc.py",
+    "sha256": "d98f0d324be60959856f03a97017bd06a5e346a98ff8c2b1fd77f6cd2df4241e"
+   },
+   {
+    "path": "<lab>/engine/jet.py",
+    "sha256": "c47c81fed1607a5723899af0cc4c298f52676e7b6d66907bf70a54822bf707ae"
+   }
+  ],
+  "at": "2026-11-16T17:48:09+00:00"
+ },
+ {
+  "kind": "settle",
+  "seal_id": "d0af75803f",
+  "seal_sha256": "d0af75803f5c350f948cdd30a1a71bccfe3b5638b7f51a34d3030f1876ce8f78",
+  "outcome": "HOLD",
+  "measured": "PE4 warm-up k=1/2 (float64 seed) contracts at r=1e-15 (ratio 0.0247, Ebox 1.8e-22), box contains exact Friedmann data. PE1 target contracts at r=1e-15 (ratio 0.00703, Ebox 1.9e-24). PE2 v3.1 holds (1 V sign change, 0 ambiguous, det sign certified, x monotone, mono runs consistent). PE3 m/r(t=0) 0.0595 +- 8.2e-5. Content nulls V0/W0/xc all refuse via Krawczyk. Controls: test_tails_v32 13 + 12 (incl. injected 3eps flagged, derivative check C, frozen-eigenpair null fails), test_tails_v31, test_lohner2 thin+box, check_struct all rc=0. Existence certified (first implementation); independently proved by refereed blind B5 (71904980c4); local uniqueness not claimed.",
+  "settled_at": "2026-11-16T18:34:21+00:00",
+  "results": [
+   {
+    "path": "<lab>/runs6/target.log",
+    "sha256": "f68a9e3376a74f8969f0d9c023d80ea47d8d02c4a5cf98f8320af3379c2bc211"
+   },
+   {
+    "path": "<lab>/runs6/warmup.log",
+    "sha256": "7fe91307078a26048d66be2a404bb3296a352c7d79f135c602199b05ebafdaf6"
+   },
+   {
+    "path": "<lab>/runs6/nullv0.log",
+    "sha256": "52073a67e1198d4be773b178d709ebfa72335fd5ee092abaca1444778d65898c"
+   },
+   {
+    "path": "<lab>/runs6/chaina.log",
+    "sha256": "78ee2f4442d99b9de717b32ff54e245af94e45f21f2a064780e919470c495bf4"
+   },
+   {
+    "path": "<lab>/runs6/chainb.log",
+    "sha256": "795feb19da7f08c95dfdee89487c1d4bf5f8e43c76a9aa9d91657023d0a9060a"
+   }
+  ]
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/bar-lb-m.md",
+    "sha256": "1606fcb365776d483124c75ea98122c51f779f665beb6a79844ab7331cc6cad8",
+    "bytes": 5574
+   }
+  ],
+  "tag": "LIGHTBALL-M",
+  "note": null,
+  "sealed_at": "2026-11-17T00:45:22+00:00",
+  "seal_fields": {
+   "<lab>/bar-lb-m.md": {
+    "formula_refs": [
+     {
+      "path": "<lab>/proposal-b4-speedup.md",
+      "lines": [
+       1,
+       267
+      ],
+      "sha256": "d80390cea397f184c0e4e56c5c3766571895c1c124d3f662005822df6672e381"
+     }
+    ],
+    "depends_on": [
+     "d0af75803f"
+    ],
+    "instruments": [
+     {
+      "path": "<lab>/engine/cert/count_b4v3.py",
+      "sha256": "9d6db027f0ca12a2fefc6fcb716bfd36d3a5d422c971611403bcec04dd13b28f"
+     },
+     {
+      "path": "<lab>/engine/cert/count_b4v3_seal.py",
+      "sha256": "6e7d49f3e1af8e8f0a3caf32476adfd3557cee49cf7d5a067f528ab7d02f470c"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tm_v3.py",
+      "sha256": "54c1e2f7f2defad39483f3de6af9774212b2b78da2d9f416234598255708f4a3"
+     },
+     {
+      "path": "<lab>/b4speed/cachel.py",
+      "sha256": "a0489e264e31f61a9934b0089644025048adcc304c7e2401031c61c9e8b98533"
+     },
+     {
+      "path": "<lab>/b4speed/l13_nsub2.pkl",
+      "sha256": "c239cbe5347059080ea3c4144b8c5a65133cb4c4812a280096c8f5116dfbb782"
+     },
+     {
+      "path": "<lab>/engine/cert/count_b4.py",
+      "sha256": "7f17adc9c0b10ec529fba28ea356296b7b3bd77dd95bd312e3bb791c4d2c7204"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tm_v2.py",
+      "sha256": "80b6a52355e28605a8f6d72784fa025ddac354733c413191cb086f84f60985d1"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tm.py",
+      "sha256": "98a06289ee5db85f16c7610968754b4a9c5a38417ec4efe1cf2a5273bf6411c9"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_stages_v2.py",
+      "sha256": "e477ec1f6fc3f36ec16e776c26c0516e1fa5b964ee769286d8e0c290f20bf2d5"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_stages.py",
+      "sha256": "582e24236c8ff81594cb56a4c2afdb0edc9a083dfdc261cf61623f4679deb821"
+     },
+     {
+      "path": "<lab>/engine/cert/core.py",
+      "sha256": "932a32b5f6b23f416147ce112b3a51e2d840b855fea79b339fdc397d3ca88f85"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_mc.py",
+      "sha256": "ee336f0e6185a620c9d995466af69b486372716dc1f593ed56d0fc13bbcbf64d"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_fields2.pkl",
+      "sha256": "dce8eba80ec94e1dff72d4187f17029cd3a0e62ae65f3e71e41658ed7761fc26"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tube_v2.py",
+      "sha256": "a39312d4a76008e638e850ccb8417a0261b5c6ea590619c973b143a15d73a368"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tube2_k1_3.pkl",
+      "sha256": "f6bff9e203c8a4e054a35bff0453d179d570dca6bd520665b900cb2b2c3071df"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_tube2_k1_2.pkl",
+      "sha256": "17dadbfcfb78e235010610e0b7b627dcb76a35ceedc6601e4fc1b845bad3badf"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_b4_smoke3.py",
+      "sha256": "45657bd361d2c18b7a2476e5f232f8b3c16f73835e8dc0618242fac9bc5f68cd"
+     },
+     {
+      "path": "<lab>/engine/cert/fw_cert3.py",
+      "sha256": "8f71e486ff5dd80718bd2338f13268fb7ad484522ebf0fa476cbf20652d10c0e"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_fw4_bg3.pkl",
+      "sha256": "53008a7d2bc8cf30dbd4c69431bdcfa366c181fdc9e18b5f27358a0cc7eb63c0"
+     },
+     {
+      "path": "<lab>/engine/cert/lin_fw4_bg3_make.py",
+      "sha256": "c46259e4874bd6be733ece8a4490fc487534b85028aa957c847b5541d3525561"
+     },
+     {
+      "path": "<lab>/runs6/fw_cert3_m2.5_ka40_k55.log",
+      "sha256": "b58013270c01a6c4cf5c793815af6a5fa34dc1bf502d76c0dbb608d898be421a"
+     },
+     {
+      "path": "<lab>/runs6/fw_cert3_m3.5_ka55_k2000.log",
+      "sha256": "5ce474e11b2b6a1caf361305c3d26db095c224b0dd905540e782bce01847f54e"
+     }
+    ],
+    "tolerances": "interval arithmetic; the 0.25-of-an-integer rule",
+    "toy_model": "none (controls are the known gauge zero and the known kappa*)"
+   }
+  },
+  "sha256": "b1b0ee1cde8ecea0c0eef5c5ced6d4da3d40ee3c3fc6ae52bda9a5ad93df861c",
+  "id": "b1b0ee1cde"
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/amend-lb-m-1.md",
+    "sha256": "9adf2d2edfb51502aad1dd47400a222019d3ed2df59e9163cd30f32814a9b9a7",
+    "bytes": 1303
+   },
+   {
+    "path": "<lab>/speedup-lb-m.md",
+    "sha256": "3166bd0c58c12c5132ca930d14633d2b59795566cfa6ceaed2242df2212a8161",
+    "bytes": 1143
+   }
+  ],
+  "tag": "LIGHTBALL-M",
+  "note": null,
+  "sealed_at": "2026-11-17T00:45:44+00:00",
+  "amends": "b1b0ee1cde",
+  "sha256": "b92e091b0cb0e82b0fadef1bf11141b67e23723385c7b8597a05ea92c7e1217d",
+  "id": "b92e091b0c"
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/amend-lb-m-2.md",
+    "sha256": "a04a8fdf1cec677fc1c91d972194579cfca9e80d05311798b995f43db094dd81",
+    "bytes": 1555
+   }
+  ],
+  "tag": "LIGHTBALL-M",
+  "note": null,
+  "sealed_at": "2026-11-17T00:49:10+00:00",
+  "amends": "b1b0ee1cde",
+  "sha256": "4971bef2bff1a27a9f41453c48696befa243b3a25b0bcd1b28b319f2e7c2760a",
+  "id": "4971bef2bf"
+ },
+ {
+  "kind": "settle",
+  "seal_id": "b1b0ee1cde",
+  "seal_sha256": "b1b0ee1cde8ecea0c0eef5c5ced6d4da3d40ee3c3fc6ae52bda9a5ad93df861c",
+  "outcome": "HOLD",
+  "measured": "N(R1=40)=1 (Delta/pi 1.0000+-2.4e-5, parity True, 99 discs, 0 refinements); kappa* [2.810552549+-3.8e-10], gamma [0.3558019224+-7.0e-11]; PM3 all nonzero/neg, iw=2 at 199 pts; controls C1a/b/c + R1=3 PASS; AMEND-2 met -> full half-plane wording",
+  "settled_at": "2026-11-17T02:18:09+00:00",
+  "results": [
+   {
+    "path": "<lab>/runs7/verdict_m.json",
+    "sha256": "aa9f6b54da4c923281febd400ad67603621bdf66d2545c8c4cde14717bd97675"
+   },
+   {
+    "path": "<lab>/runs7/count_r40.log",
+    "sha256": "a1f1f5f3f9d4862b652c2e38e5fafe573a270186ea395304489ab35d30607b4d"
+   },
+   {
+    "path": "<lab>/runs7/kstar.log",
+    "sha256": "4dbe4d4b8f6beb2b491fe5e13f5e2000c56f46b4ead90e4a88bdd2be6709c5b1"
+   },
+   {
+    "path": "<lab>/runs7/ctl_c1.log",
+    "sha256": "671ef28b51c5b2ae62f7744f47fa3210c69554546d5be54a86386eb399a37aa9"
+   },
+   {
+    "path": "<lab>/runs7/ctl_r3.log",
+    "sha256": "64f5758b27fb7275c2a1ceb4968c4d20e37ae8f8fe5ad9d19509a8f018c13f37"
+   }
+  ]
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/bar-lb-g2.md",
+    "sha256": "9251c736900626bcd46db9d180f8e080f2e868243f0b5cdb03588174222939d1",
+    "bytes": 3499
+   }
+  ],
+  "tag": "LIGHTBALL-G2",
+  "note": null,
+  "sealed_at": "2026-11-17T02:39:58+00:00",
+  "seal_fields": {
+   "<lab>/bar-lb-g2.md": {
+    "formula_refs": [
+     {
+      "path": "<lab>/bar-lb-m.md",
+      "lines": [
+       35,
+       43
+      ],
+      "sha256": "1606fcb365776d483124c75ea98122c51f779f665beb6a79844ab7331cc6cad8"
+     }
+    ],
+    "depends_on": [
+     "b1b0ee1cde",
+     "71904980c4"
+    ],
+    "tolerances": "interval overlap in arb, because both sides are rigorous enclosures, so any honest pair must overlap with no headroom needed. The width cap 1e-6 is 2500x looser than ours (7.7e-10), to give a blind seat headroom",
+    "ceiling": "none - this is an overlap test of two rigorous enclosures; the best possible outcome is overlap",
+    "toy_model": "none - the gauge eigenvalue (PG2) is the known-answer control on the same object"
+   }
+  },
+  "sha256": "8a1c27c7fb3080e4c5033fa0a8dc243aa151798ad40dafe3dec26e49d182172a",
+  "id": "8a1c27c7fb"
+ },
+ {
+  "kind": "seal-file",
+  "v": 2,
+  "files": [
+   {
+    "path": "<lab>/amend-lb-g2-1.md",
+    "sha256": "ff259ae14e69b62b79a386802eef4507ef18c8314dc34a466a3ce2709f0299bf",
+    "bytes": 1874
+   }
+  ],
+  "tag": "LIGHTBALL-G2",
+  "note": null,
+  "sealed_at": "2026-11-17T02:40:29+00:00",
+  "amends": "8a1c27c7fb",
+  "sha256": "b62c6aecc99338df8888fe4071b483f0f32cc818ad29c12d6eed28ea86a8e7fa",
+  "id": "b62c6aecc9"
+ },
+ {
+  "kind": "pin",
+  "seal_id": "8a1c27c7fb",
+  "files": [
+   {
+    "path": "<lab>/b5g/derive_g2.py",
+    "sha256": "4750802ae1a9d25df26ef6e724e8e3f9e4448a7516df89b2d2be942d2700b4c1"
+   },
+   {
+    "path": "<lab>/b5g/system_g2.py",
+    "sha256": "deb401a00810d17fe37e3a77087c9a9848d69fdf333300a0daa7ecf9bcb24557"
+   },
+   {
+    "path": "<lab>/b5g/centre_sym.py",
+    "sha256": "e42f96a276db6082b05d86b71081ef96e57d5496070b6ae44951986ffb059641"
+   },
+   {
+    "path": "<lab>/b5g/sonic_sym_g2.py",
+    "sha256": "179903e456b22c87172005d606043778462c5eb0264548afe80fcc12c741babb"
+   },
+   {
+    "path": "<lab>/b5g/bgjac_g2.py",
+    "sha256": "8e08490addb6c07c21a5e1ea14c1a5d5486b4d48c0c961058b14e2bbea38d49e"
+   },
+   {
+    "path": "<lab>/b5g/tm.py",
+    "sha256": "dce490e30f1043245fd813f341e00d05fa0631c53363c332b04ed879681d61bd"
+   },
+   {
+    "path": "<lab>/b5g/pipeline_g2.py",
+    "sha256": "311ee215ffa12598ba8835ddd7666df81131e09470c9942385eb4b27c2642072"
+   },
+   {
+    "path": "<lab>/b5g/lohner_g2.py",
+    "sha256": "0ccd10e3a99436e19a421746ec45510e42113849c096b3818811a71b05fba42f"
+   },
+   {
+    "path": "<lab>/b5g/frw_exact_g2.py",
+    "sha256": "97250542f51c711936a980a039ae823055fc09625db04f06cde4057cf18a2e80"
+   },
+   {
+    "path": "<lab>/b5g/cert_g2.py",
+    "sha256": "61399a0fed97142aa3a40bdb18b7bab56c753638bef9f798e8934585dfbacf27"
+   },
+   {
+    "path": "<lab>/b5g/refine_g2.py",
+    "sha256": "bb7d757b88bc3052d5ee0b5826920d16a5ea63376d8fb123c82d5bed08fd5ab8"
+   },
+   {
+    "path": "<lab>/b5g/make_result_g2.py",
+    "sha256": "bcac0fd6d104fc03499ac3e47a236d62a9ad13dcefb1d0c2447995eec535f672"
+   },
+   {
+    "path": "<lab>/b5g/eqs_g2.json",
+    "sha256": "88dcfa250bdec13039920ae710afd36e250b2a300943ad55b78b634f1e95d034"
+   },
+   {
+    "path": "<lab>/b5g/centre_sys.json",
+    "sha256": "5918d30bcc5b4307937272c3bb566132512964398dd6ae808c6fa65e8d2b43fc"
+   },
+   {
+    "path": "<lab>/b5g/exprs_g2.json",
+    "sha256": "4af75e974225099d5ee0dcf2667c1e0a3dfbf2d93b8f6cf85c451c65eda6d1b9"
+   },
+   {
+    "path": "<lab>/b5g/bgjac_g2.json",
+    "sha256": "2778795889a6582a5baf61132e692853d32470d4b8a6ddea181bd6e966dd3111"
+   }
+  ],
+  "at": "2026-11-17T03:46:08+00:00",
+  "note": "POST-RUN pins (deviation: BAR asked for pins before the first certified run; the blind seat did not pin). Files unchanged since the certified runs per seat report; disclosed."
+ },
+ {
+  "kind": "settle",
+  "seal_id": "8a1c27c7fb",
+  "seal_sha256": "8a1c27c7fb3080e4c5033fa0a8dc243aa151798ad40dafe3dec26e49d182172a",
+  "outcome": "HOLD",
+  "measured": "PG1: blind kappa* [2.8105522156, 2.8105525970] (w 3.8e-7 <= 1e-6) overlaps M's [2.810552549+-3.8e-10]; refined (runs A,B differ in every setting) [2.8105525488272+-7.3e-14], gamma [0.35580192244308+-8.0e-15], inside M's band. PG2' (AMEND b62c6aecc9): FRW closed-form rate 1 enclosed [0.99999,1.00001] both runs (CAVEAT: this rate is the time-translation gauge mode - weaker control; FRW physical modes sit on sonic resonances). PG3: G=F/(kappa-1) certified negative on [0.40,2.70]. Disclosed old PG2: blind gauge mode at kappa=1 (polar slicing), not 0.3557 (first engine's gauge) - as the amendment anticipated. Deviations: instruments pinned post-run; seat knew literature ~0.3558 (located root by coarse scan).",
+  "settled_at": "2026-11-17T03:46:08+00:00",
+  "pin_warnings": [
+   "STALE: refine_A.log is older than the last edit of instrument make_result_g2.py (written 23:40, instrument edited 23:41): re-run it on the sealed file",
+   "STALE: refine_B.log is older than the last edit of instrument make_result_g2.py (written 23:41, instrument edited 23:41): re-run it on the sealed file",
+   "STALE: cert_A.log is older than the last edit of instrument refine_g2.py (written 23:39, instrument edited 23:39): re-run it on the sealed file",
+   "STALE: cert_A.log is older than the last edit of instrument make_result_g2.py (written 23:39, instrument edited 23:41): re-run it on the sealed file",
+   "STALE: cert_B.log is older than the last edit of instrument refine_g2.py (written 23:37, instrument edited 23:39): re-run it on the sealed file",
+   "STALE: cert_B.log is older than the last edit of instrument make_result_g2.py (written 23:37, instrument edited 23:41): re-run it on the sealed file"
+  ],
+  "results": [
+   {
+    "path": "<lab>/b5g/result_g2.json",
+    "sha256": "c401ad4628ea1a9e81ac863eb7f404fe2689863e6c6fb14b227ddd92c063c09d"
+   },
+   {
+    "path": "<lab>/b5g/refine_a.log",
+    "sha256": "407efa590d5031b367fa7427a4bfc889eb1ba54ace59ee1dd531d3caf4ebfec2"
+   },
+   {
+    "path": "<lab>/b5g/refine_b.log",
+    "sha256": "d093236d2598bf923d394091604f44b53a342ddcc0d6925210775910531a3e73"
+   },
+   {
+    "path": "<lab>/b5g/cert_a.log",
+    "sha256": "f723e0dc592d97bed43ad9884c788b896d11a851c1b6310f416cf0032e2b4042"
+   },
+   {
+    "path": "<lab>/b5g/cert_b.log",
+    "sha256": "6d1cb9c9ff0313d0d0a8a5471d6a9d9f0b084ed7d1ec39b701d295064490741f"
+   },
+   {
+    "path": "<lab>/b5g/report.md",
+    "sha256": "4ab1a000a5b76241320f45db6083fafcb3dc1f4b756d84a0ccdb1810bdf4d823"
+   }
+  ]
+ }
+]

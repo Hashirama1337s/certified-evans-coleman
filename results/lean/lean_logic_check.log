@@ -1,0 +1,11 @@
+lean: <lab>/lean_fw/fw_collatz_logic.lean  sha256 bc6d8d78c7df3440  8 theorem(s): FarWallCollatz.collatz_sub_nonneg, FarWallCollatz.isUnit_one_sub, FarWallCollatz.neumann_bound, FarWallCollatz.inv_mulVec_nonneg, FarWallCollatz.inv_nonneg, FarWallCollatz.eigen_norm_lt_one, FarWallCollatz.collatz_mono, FarWallCollatz.far_wall_corollary_3_1
+  ok   FarWallCollatz.collatz_sub_nonneg  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.isUnit_one_sub  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.neumann_bound  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.inv_mulVec_nonneg  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.inv_nonneg  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.eigen_norm_lt_one  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.collatz_mono  axioms: propext, Classical.choice, Quot.sound
+  ok   FarWallCollatz.far_wall_corollary_3_1  axioms: propext, Classical.choice, Quot.sound
+PASS  lean 750fcfda8b  18 s  - checked by Lean's kernel. This proves the statement AS WRITTEN in Lean; a second seat must confirm it matches the claim (lean-check skill). Cite with `settle ... --lean 750fcfda8b`.
+memcap: exit 0, peak 8.89 GB of 12.00 GB cap

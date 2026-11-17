@@ -1,0 +1,13 @@
+[    0.0s] [v3] count_b4v3 smoke: ctx.cap 32, N_ARC 8, R_RULE [(2.0, 0.25), (5.0, 0.4), (90.0, 0.5)], R_RIGHT 1, R_EDGE_RE 5, shape halfdisc, frame A1, prec 128, m 16 J 4 nsub 2 tol 1e-20 REFINE 3, LB_CACHE13 <LAB>/b4speed/L13_nsub2.pkl, LB_R_FIXED None, LB_MAXDISCS None
+[    0.5s] stage S ready (0s)
+[    0.9s] centre ready (1s)
+[  116.6s] stage L ready: 720 steps (117s)
+[  116.6s] [v3] engine: Linear2 (fresh build), prec set to 128 after setup, TM frame A1
+[  116.6s] settings: nsub 1 tol 1e-30 m 24 J 6 prec 200
+[  116.6s] tube target.log PE1 r=1e-15: 720 stored steps -> 720 transport steps (0 splits), max depth 0; kappa_g = [0.35569920371096396 +/- 2.48e-18]  Abar'(0) = [-0.19892818680177155 +/- 6.48e-18]  method c1
+[  425.7s] C1a D_HKA around kappa_g (box half-width 0.05): winding 1 (expect 1) PASS  discs 4, segments 8, 309s
+[  732.1s] C1b D_new around kappa_g: winding 0 (expect 0) PASS  discs 4, segments 4, 306s
+[  853.2s] C1c D_HKA zero enclosure: [0.3556992037 +/- 7.41e-11]  overlaps closed-form kappa_g: True
+[  853.2s] TM evaluations 8, point evaluations 34, total 853s
+memcap: exit 0, peak 0.64 GB of 8.00 GB cap
+rc=0

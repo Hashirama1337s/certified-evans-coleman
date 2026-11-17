@@ -1,0 +1,13 @@
+[   34.8s] [sliver] x_end [-0.050000000 +/- 7e-14], l = [5.41e-14 +/- 1.32e-17], sup|f| = [0.727 +/- 1.12e-4], delta = [3.93e-14 +/- 4.64e-17]; last tau sub-cell re-enclosed: sig [-0.153 +/- 3.19e-4] ellphi [-0.06 +/- 7.48e-3]
+[   34.9s] [lemma 4.1] C0(0) = C00, C1(0) = 0, C1'(0) = C11 contained; 128 dropped coefficients contain 0
+[   36.9s] [setup] cells 1078, sonic g=[0.08962 +/- 1.23e-6], A_max=[1.914 +/- 3.60e-4], centre data 64 cells, ctx.cap 32 (37s)
+[   43.1s] [bulk] 11 K-cells in [40.00, 55.00] contractive; worst collatz [0.7566 +/- 2.67e-5], max e_b [0.3709 +/- 3.84e-5], max nbar [5.636 +/- 3.79e-5]
+[    43s] band M=2.5 [40.0, 55.0]: 11 K-cells
+[   77.4s] [sliver] x_end [-0.050000000 +/- 7e-14], l = [5.41e-14 +/- 1.32e-17], sup|f| = [0.727 +/- 1.12e-4], delta = [3.93e-14 +/- 4.64e-17]; last tau sub-cell re-enclosed: sig [-0.153 +/- 3.19e-4] ellphi [-0.06 +/- 7.48e-3]
+[   78.3s] [setup] bulk extended below xbar: 152 centre-manifold cells (theta >= 0.00137)
+[   78.4s] [lemma 4.1] C0(0) = C00, C1(0) = 0, C1'(0) = C11 contained; 128 dropped coefficients contain 0
+[   80.5s] [setup] cells 1230, sonic g=[0.08962 +/- 1.23e-6], A_max=[1.914 +/- 3.60e-4], centre data 66 cells, ctx.cap 32 (37s)
+[  158.0s] [bulk] 122 K-cells in [55.00, 2000.00] contractive; worst collatz [0.5682 +/- 1.20e-5], max e_b [0.1110 +/- 4.96e-5], max nbar [2.922 +/- 2.47e-4]
+[   158s] band M=3.5 [55.0, 2000.0]: 122 K-cells
+wrote lean_fw/fw_collatz_all.lean: 133 K-cells, worst rational ratio 0.756648
+memcap: exit 0, peak 0.86 GB of 8.00 GB cap

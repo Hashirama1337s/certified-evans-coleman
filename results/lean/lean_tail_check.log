@@ -1,0 +1,7 @@
+lean: <lab>/lean_fw/fw_collatz_tail.lean  sha256 4f1dca963105ed0a  4 theorem(s): fw_tail_row0, fw_tail_row1, fw_tail_row2, fw_tail_ypos
+  ok   fw_tail_row0  axioms: propext, Classical.choice, Quot.sound
+  ok   fw_tail_row1  axioms: propext, Classical.choice, Quot.sound
+  ok   fw_tail_row2  axioms: propext, Classical.choice, Quot.sound
+  ok   fw_tail_ypos  axioms: propext, Classical.choice, Quot.sound
+PASS  lean 6a2a9e1d2f  18 s  - checked by Lean's kernel. This proves the statement AS WRITTEN in Lean; a second seat must confirm it matches the claim (lean-check skill). Cite with `settle ... --lean 6a2a9e1d2f`.
+memcap: exit 0, peak 8.86 GB of 12.00 GB cap

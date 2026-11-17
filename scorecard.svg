@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="402" viewBox="0 0 900 402" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Scorecard: 9 sealed tests (4 HOLD, 3 FAILED, 2 VOID)">
+<title>Scorecard: 9 sealed tests (4 HOLD, 3 FAILED, 2 VOID)</title>
+<rect width="900" height="402" rx="10" fill="#1c2026" stroke="#2f353d"/>
+<text x="20" y="34" font-size="18" font-weight="600" fill="#e8edf2">Scorecard: 9 sealed tests (4 HOLD, 3 FAILED, 2 VOID)</text>
+<text x="20" y="54" font-size="12" fill="#9aa4ae">Sealed = prediction and pass bar hashed before the run. Failures are shown as failures. Details: SCORECARD.md.</text>
+<rect x="10" y="66" width="880" height="22" fill="#262b31"/>
+<text x="20" y="82" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">EXISTENCE (INTERVAL ARITHMETIC)</text>
+<text x="20" y="110" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E 9ed31dfab0</text>
+<text x="190" y="110" font-size="12.5" fill="#e8edf2">Existence, attempt 1</text>
+<rect x="620" y="96" width="64" height="20" rx="10" fill="#3a1a1a"/>
+<text x="630" y="110" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="44" lengthAdjust="spacingAndGlyphs">FAILED</text>
+<line x1="10" y1="119" x2="890" y2="119" stroke="#22272e"/>
+<text x="20" y="140" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E2 95f6de5cf2</text>
+<text x="190" y="140" font-size="12.5" fill="#e8edf2">Existence, attempt 2</text>
+<rect x="620" y="126" width="64" height="20" rx="10" fill="#3a1a1a"/>
+<text x="630" y="140" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="44" lengthAdjust="spacingAndGlyphs">FAILED</text>
+<line x1="10" y1="149" x2="890" y2="149" stroke="#22272e"/>
+<text x="20" y="170" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E3 8aec628fd2</text>
+<text x="190" y="170" font-size="12.5" fill="#e8edf2">Existence, attempt 3</text>
+<rect x="620" y="156" width="50" height="20" rx="10" fill="#33290f"/>
+<text x="630" y="170" font-size="11.5" font-weight="600" fill="#ffc94d" textLength="30" lengthAdjust="spacingAndGlyphs">VOID</text>
+<line x1="10" y1="179" x2="890" y2="179" stroke="#22272e"/>
+<text x="20" y="200" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E4 7928715efe</text>
+<text x="190" y="200" font-size="12.5" fill="#e8edf2">Existence, attempt 4</text>
+<rect x="620" y="186" width="64" height="20" rx="10" fill="#3a1a1a"/>
+<text x="630" y="200" font-size="11.5" font-weight="600" fill="#ff6b6b" textLength="44" lengthAdjust="spacingAndGlyphs">FAILED</text>
+<line x1="10" y1="209" x2="890" y2="209" stroke="#22272e"/>
+<text x="20" y="230" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E5 d0af75803f</text>
+<text x="190" y="230" font-size="12.5" fill="#e8edf2">Existence, attempt 5 (mean-value head bound R8)</text>
+<rect x="620" y="216" width="50" height="20" rx="10" fill="#12301c"/>
+<text x="630" y="230" font-size="11.5" font-weight="600" fill="#39ff14" textLength="30" lengthAdjust="spacingAndGlyphs">HOLD</text>
+<line x1="10" y1="239" x2="890" y2="239" stroke="#22272e"/>
+<text x="20" y="260" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">E5 dup 9592b015f0</text>
+<text x="190" y="260" font-size="12.5" fill="#e8edf2">The same E5 file sealed twice</text>
+<rect x="620" y="246" width="50" height="20" rx="10" fill="#33290f"/>
+<text x="630" y="260" font-size="11.5" font-weight="600" fill="#ffc94d" textLength="30" lengthAdjust="spacingAndGlyphs">VOID</text>
+<line x1="10" y1="269" x2="890" y2="269" stroke="#22272e"/>
+<text x="20" y="290" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">B5C 71904980c4</text>
+<text x="190" y="290" font-size="12.5" fill="#e8edf2">Blind second existence proof (closure checks)</text>
+<rect x="620" y="276" width="50" height="20" rx="10" fill="#12301c"/>
+<text x="630" y="290" font-size="11.5" font-weight="600" fill="#39ff14" textLength="30" lengthAdjust="spacingAndGlyphs">HOLD</text>
+<line x1="10" y1="299" x2="890" y2="299" stroke="#22272e"/>
+<rect x="10" y="306" width="880" height="22" fill="#262b31"/>
+<text x="20" y="322" font-size="11.5" font-weight="600" fill="#39ff14" letter-spacing="0.5">THE COUNT AND THE EXPONENT</text>
+<text x="20" y="350" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">M b1b0ee1cde</text>
+<text x="190" y="350" font-size="12.5" fill="#e8edf2">Exactly one growing spherical mode; kappa*</text>
+<rect x="620" y="336" width="50" height="20" rx="10" fill="#12301c"/>
+<text x="630" y="350" font-size="11.5" font-weight="600" fill="#39ff14" textLength="30" lengthAdjust="spacingAndGlyphs">HOLD</text>
+<line x1="10" y1="359" x2="890" y2="359" stroke="#22272e"/>
+<text x="20" y="380" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#e8edf2">G2 8a1c27c7fb</text>
+<text x="190" y="380" font-size="12.5" fill="#e8edf2">Blind second kappa* (on the B5 solution)</text>
+<rect x="620" y="366" width="50" height="20" rx="10" fill="#12301c"/>
+<text x="630" y="380" font-size="11.5" font-weight="600" fill="#39ff14" textLength="30" lengthAdjust="spacingAndGlyphs">HOLD</text>
+<line x1="10" y1="389" x2="890" y2="389" stroke="#22272e"/>
+</svg>

@@ -1,0 +1,15 @@
+eigs ['0.164293492238', '6.78548996416e-32', '-0.0148038245662'] lam 0.164293492237525
+inner sonic point used: theta -0.3011131328 z 0.47718669611129068678
+centre-series tail check |last terms|: 3.08e-33 7.0e-37
+residual at z=0.05 (sonic->centre Taylor vs centre series): ['9.6077e-17', '4.8374e-14']
+Traceback (most recent call last):
+  File "<LAB-WIN>\b5\crosscheck50.py", line 60, in <module>
+    Om0, V0 = f(mp.mpf(0))
+              ^^^^^^^^^^^^
+  File "<HOME>\AppData\Local\Programs\Python\Python311\Lib\site-packages\mpmath\calculus\odes.py", line 274, in interpolant
+    ser, xa, xb = get_series(x)
+                  ^^^^^^^^^^^^^
+  File "<HOME>\AppData\Local\Programs\Python\Python311\Lib\site-packages\mpmath\calculus\odes.py", line 253, in get_series
+    raise ValueError
+ValueError
+memcap: exit 1, peak 0.06 GB of 8.00 GB cap

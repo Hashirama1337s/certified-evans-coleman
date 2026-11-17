@@ -1,0 +1,14 @@
+k=1/2 nu_s=[0.0010000000000000000000000000000000000000000000000000000000000 +/- 1.19e-63] K=16 box radius 1e-12: eps_v32 [2.253e-27 +/- 3.27e-31] epsX_v32 [2.897e-28 +/- 2.46e-32] | v3.1 eps [5.264e-19 +/- 4.98e-23] epsX [6.766e-20 +/- 4.95e-24]  [1.4s]
+(C) derivative "built" vs central difference (h=1e-25): 525 of 525 head coefficients overlap; max rel err 14.5
+(C) derivative "frozen-eigenpair null" vs central difference (h=1e-25): 328 of 525 head coefficients overlap; max rel err 406
+(C) built derivative agrees everywhere: True; frozen null FAILS (>=1 non-overlap): True -> PASS
+  mp branch matched to the certified manifold: 0 (diff 3.69e-49); mp dps 200
+  V0 = V0~ -1 r: max|P_K(V0) - mp| over 5 theta = 2.03e-44  (9.01e-18 x eps_v32); reference orders 120/160  OK
+  V0 = V0~ -0.5 r: max|P_K(V0) - mp| over 5 theta = 2.03e-44  (9.01e-18 x eps_v32); reference orders 120/160  OK
+  V0 = V0~ 0 r: max|P_K(V0) - mp| over 5 theta = 2.03e-44  (9.01e-18 x eps_v32); reference orders 120/160  OK
+  V0 = V0~ 0.7 r: max|P_K(V0) - mp| over 5 theta = 2.03e-44  (9.01e-18 x eps_v32); reference orders 120/160  OK
+  V0 = V0~ 1 r: max|P_K(V0) - mp| over 5 theta = 2.03e-44  (9.01e-18 x eps_v32); reference orders 120/160  OK
+(B) mean-value head: enclosure failures 0 of 2625; |c_n(V0s)| <= h_n failures 0 of 2625
+(A) max |error| / eps_v32 = 9.01e-18; max allow/eps_v32 = 2.111; INJ (3*eps_v32 shift) missed 0 of 75 -> PASS
+TAIL CHECK R8 (k=1/2, box 1e-12, mp 200 digits): PASS  total 48.0s
+memcap: exit 0, peak 0.08 GB of 8.00 GB cap

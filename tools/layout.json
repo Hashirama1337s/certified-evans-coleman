@@ -1,0 +1,883 @@
+{
+ "note": "Where each shipped file sits in the lab tree (the work folder of tools/reproduce.py mirrors it).",
+ "files": [
+  {
+   "repo": "code/b4speed/cacheL.py",
+   "lab": "b4speed/cacheL.py"
+  },
+  {
+   "repo": "code/b5/box_cover.py",
+   "lab": "b5/box_cover.py"
+  },
+  {
+   "repo": "code/b5/cfg_ec.json",
+   "lab": "b5/cfg_ec.json"
+  },
+  {
+   "repo": "code/b5/cfg_frw.json",
+   "lab": "b5/cfg_frw.json"
+  },
+  {
+   "repo": "code/b5/cheb.py",
+   "lab": "b5/cheb.py"
+  },
+  {
+   "repo": "code/b5/close_b5.py",
+   "lab": "b5/close_b5.py"
+  },
+  {
+   "repo": "code/b5/crosscheck50.py",
+   "lab": "b5/crosscheck50.py"
+  },
+  {
+   "repo": "code/b5/crosscheck50_ec.json",
+   "lab": "b5/crosscheck50_ec.json"
+  },
+  {
+   "repo": "code/b5/derive.py",
+   "lab": "b5/derive.py"
+  },
+  {
+   "repo": "code/b5/hp_1_3.json",
+   "lab": "b5/hp_1_3.json"
+  },
+  {
+   "repo": "code/b5/hp_1_3_refined.json",
+   "lab": "b5/hp_1_3_refined.json"
+  },
+  {
+   "repo": "code/b5/hp_frw_1_2.json",
+   "lab": "b5/hp_frw_1_2.json"
+  },
+  {
+   "repo": "code/b5/make_result.py",
+   "lab": "b5/make_result.py"
+  },
+  {
+   "repo": "code/b5/mk_frw_hp.py",
+   "lab": "b5/mk_frw_hp.py"
+  },
+  {
+   "repo": "code/b5/null.py",
+   "lab": "b5/null.py"
+  },
+  {
+   "repo": "code/b5/numcheck.py",
+   "lab": "b5/numcheck.py"
+  },
+  {
+   "repo": "code/b5/prove.py",
+   "lab": "b5/prove.py"
+  },
+  {
+   "repo": "code/b5/refine.py",
+   "lab": "b5/refine.py"
+  },
+  {
+   "repo": "code/b5/result_ec.json",
+   "lab": "b5/result_ec.json"
+  },
+  {
+   "repo": "code/b5/result_ec.log",
+   "lab": "b5/result_ec.log"
+  },
+  {
+   "repo": "code/b5/result_ec_centre_cache.json",
+   "lab": "b5/result_ec_centre_cache.json"
+  },
+  {
+   "repo": "code/b5/result_ec_centre_cache_attempt2.json",
+   "lab": "b5/result_ec_centre_cache_attempt2.json"
+  },
+  {
+   "repo": "code/b5/result_frw.json",
+   "lab": "b5/result_frw.json"
+  },
+  {
+   "repo": "code/b5/result_frw.log",
+   "lab": "b5/result_frw.log"
+  },
+  {
+   "repo": "code/b5/result_frw_centre_cache.json",
+   "lab": "b5/result_frw_centre_cache.json"
+  },
+  {
+   "repo": "code/b5/result_null.json",
+   "lab": "b5/result_null.json"
+  },
+  {
+   "repo": "code/b5/results_summary.json",
+   "lab": "b5/results_summary.json"
+  },
+  {
+   "repo": "code/b5/rigode.py",
+   "lab": "b5/rigode.py"
+  },
+  {
+   "repo": "code/b5/run_crosscheck50.out",
+   "lab": "b5/run_crosscheck50.out"
+  },
+  {
+   "repo": "code/b5/run_crosscheck50_attempt1.out",
+   "lab": "b5/run_crosscheck50_attempt1.out"
+  },
+  {
+   "repo": "code/b5/run_ec.out",
+   "lab": "b5/run_ec.out"
+  },
+  {
+   "repo": "code/b5/run_ec_attempt1.out",
+   "lab": "b5/run_ec_attempt1.out"
+  },
+  {
+   "repo": "code/b5/run_ec_attempt2_offcentre.out",
+   "lab": "b5/run_ec_attempt2_offcentre.out"
+  },
+  {
+   "repo": "code/b5/run_frw.out",
+   "lab": "b5/run_frw.out"
+  },
+  {
+   "repo": "code/b5/run_frw_attempt1_box1e-36.out",
+   "lab": "b5/run_frw_attempt1_box1e-36.out"
+  },
+  {
+   "repo": "code/b5/run_frw_attempt2_killed.out",
+   "lab": "b5/run_frw_attempt2_killed.out"
+  },
+  {
+   "repo": "code/b5/run_frw_attempt3_wz1e-32.out",
+   "lab": "b5/run_frw_attempt3_wz1e-32.out"
+  },
+  {
+   "repo": "code/b5/run_null.out",
+   "lab": "b5/run_null.out"
+  },
+  {
+   "repo": "code/b5/run_null_attempt1.out",
+   "lab": "b5/run_null_attempt1.out"
+  },
+  {
+   "repo": "code/b5/run_null_attempt2_N3hang.out",
+   "lab": "b5/run_null_attempt2_N3hang.out"
+  },
+  {
+   "repo": "code/b5/series.py",
+   "lab": "b5/series.py"
+  },
+  {
+   "repo": "code/b5/solve_hp.py",
+   "lab": "b5/solve_hp.py"
+  },
+  {
+   "repo": "code/b5/sonic.py",
+   "lab": "b5/sonic.py"
+  },
+  {
+   "repo": "code/b5/sonic_sym.json",
+   "lab": "b5/sonic_sym.json"
+  },
+  {
+   "repo": "code/b5/sonic_sym.py",
+   "lab": "b5/sonic_sym.py"
+  },
+  {
+   "repo": "code/b5/system.json",
+   "lab": "b5/system.json"
+  },
+  {
+   "repo": "code/b5/system.py",
+   "lab": "b5/system.py"
+  },
+  {
+   "repo": "code/b5/system2.json",
+   "lab": "b5/system2.json"
+  },
+  {
+   "repo": "code/b5/system2.py",
+   "lab": "b5/system2.py"
+  },
+  {
+   "repo": "code/b5/systems.py",
+   "lab": "b5/systems.py"
+  },
+  {
+   "repo": "code/b5/xc_check.py",
+   "lab": "b5/xc_check.py"
+  },
+  {
+   "repo": "code/b5g/REPORT.md",
+   "lab": "b5g/REPORT.md"
+  },
+  {
+   "repo": "code/b5g/RUN.md",
+   "lab": "b5g/RUN.md"
+  },
+  {
+   "repo": "code/b5g/bgjac_g2.json",
+   "lab": "b5g/bgjac_g2.json"
+  },
+  {
+   "repo": "code/b5g/bgjac_g2.py",
+   "lab": "b5g/bgjac_g2.py"
+  },
+  {
+   "repo": "code/b5g/centre_sym.py",
+   "lab": "b5g/centre_sym.py"
+  },
+  {
+   "repo": "code/b5g/centre_sys.json",
+   "lab": "b5g/centre_sys.json"
+  },
+  {
+   "repo": "code/b5g/cert_A.json",
+   "lab": "b5g/cert_A.json"
+  },
+  {
+   "repo": "code/b5g/cert_A.log",
+   "lab": "b5g/cert_A.log"
+  },
+  {
+   "repo": "code/b5g/cert_B.json",
+   "lab": "b5g/cert_B.json"
+  },
+  {
+   "repo": "code/b5g/cert_B.log",
+   "lab": "b5g/cert_B.log"
+  },
+  {
+   "repo": "code/b5g/cert_g2.py",
+   "lab": "b5g/cert_g2.py"
+  },
+  {
+   "repo": "code/b5g/curio_g2.py",
+   "lab": "b5g/curio_g2.py"
+  },
+  {
+   "repo": "code/b5g/dbg2_g2.py",
+   "lab": "b5g/dbg2_g2.py"
+  },
+  {
+   "repo": "code/b5g/dbg3_g2.py",
+   "lab": "b5g/dbg3_g2.py"
+  },
+  {
+   "repo": "code/b5g/dbg4_g2.py",
+   "lab": "b5g/dbg4_g2.py"
+  },
+  {
+   "repo": "code/b5g/dbg5_g2.py",
+   "lab": "b5g/dbg5_g2.py"
+  },
+  {
+   "repo": "code/b5g/dbg_g2.py",
+   "lab": "b5g/dbg_g2.py"
+  },
+  {
+   "repo": "code/b5g/derive_g2.py",
+   "lab": "b5g/derive_g2.py"
+  },
+  {
+   "repo": "code/b5g/diag_g2.py",
+   "lab": "b5g/diag_g2.py"
+  },
+  {
+   "repo": "code/b5g/eqs_g2.json",
+   "lab": "b5g/eqs_g2.json"
+  },
+  {
+   "repo": "code/b5g/exprs_g2.json",
+   "lab": "b5g/exprs_g2.json"
+  },
+  {
+   "repo": "code/b5g/frw_exact_g2.py",
+   "lab": "b5g/frw_exact_g2.py"
+  },
+  {
+   "repo": "code/b5g/lohner_g2.py",
+   "lab": "b5g/lohner_g2.py"
+  },
+  {
+   "repo": "code/b5g/make_result.log",
+   "lab": "b5g/make_result.log"
+  },
+  {
+   "repo": "code/b5g/make_result_g2.py",
+   "lab": "b5g/make_result_g2.py"
+  },
+  {
+   "repo": "code/b5g/pipeline_g2.py",
+   "lab": "b5g/pipeline_g2.py"
+  },
+  {
+   "repo": "code/b5g/probe_A.log",
+   "lab": "b5g/probe_A.log"
+  },
+  {
+   "repo": "code/b5g/refine_A.json",
+   "lab": "b5g/refine_A.json"
+  },
+  {
+   "repo": "code/b5g/refine_A.log",
+   "lab": "b5g/refine_A.log"
+  },
+  {
+   "repo": "code/b5g/refine_B.json",
+   "lab": "b5g/refine_B.json"
+  },
+  {
+   "repo": "code/b5g/refine_B.log",
+   "lab": "b5g/refine_B.log"
+  },
+  {
+   "repo": "code/b5g/refine_g2.py",
+   "lab": "b5g/refine_g2.py"
+  },
+  {
+   "repo": "code/b5g/result_g2.json",
+   "lab": "b5g/result_g2.json"
+  },
+  {
+   "repo": "code/b5g/scan_ec_dev.log",
+   "lab": "b5g/scan_ec_dev.log"
+  },
+  {
+   "repo": "code/b5g/sign_intervals_A.json",
+   "lab": "b5g/sign_intervals_A.json"
+  },
+  {
+   "repo": "code/b5g/sonic_sym_g2.py",
+   "lab": "b5g/sonic_sym_g2.py"
+  },
+  {
+   "repo": "code/b5g/system_g2.py",
+   "lab": "b5g/system_g2.py"
+  },
+  {
+   "repo": "code/b5g/test_g2.py",
+   "lab": "b5g/test_g2.py"
+  },
+  {
+   "repo": "code/b5g/tm.py",
+   "lab": "b5g/tm.py"
+  },
+  {
+   "repo": "code/engine/bg.py",
+   "lab": "engine/bg.py"
+  },
+  {
+   "repo": "code/engine/bgc.py",
+   "lab": "engine/bgc.py"
+  },
+  {
+   "repo": "code/engine/cert/check_struct.py",
+   "lab": "engine/cert/check_struct.py"
+  },
+  {
+   "repo": "code/engine/cert/core.py",
+   "lab": "engine/cert/core.py"
+  },
+  {
+   "repo": "code/engine/cert/count_b4.py",
+   "lab": "engine/cert/count_b4.py"
+  },
+  {
+   "repo": "code/engine/cert/count_b4v3.py",
+   "lab": "engine/cert/count_b4v3.py"
+  },
+  {
+   "repo": "code/engine/cert/count_b4v3_seal.py",
+   "lab": "engine/cert/count_b4v3_seal.py"
+  },
+  {
+   "repo": "code/engine/cert/driver.py",
+   "lab": "engine/cert/driver.py"
+  },
+  {
+   "repo": "code/engine/cert/driver2.py",
+   "lab": "engine/cert/driver2.py"
+  },
+  {
+   "repo": "code/engine/cert/driver_v2.py",
+   "lab": "engine/cert/driver_v2.py"
+  },
+  {
+   "repo": "code/engine/cert/driver_v3.py",
+   "lab": "engine/cert/driver_v3.py"
+  },
+  {
+   "repo": "code/engine/cert/driver_v31.py",
+   "lab": "engine/cert/driver_v31.py"
+  },
+  {
+   "repo": "code/engine/cert/driver_v32.py",
+   "lab": "engine/cert/driver_v32.py"
+  },
+  {
+   "repo": "code/engine/cert/fields.py",
+   "lab": "engine/cert/fields.py"
+  },
+  {
+   "repo": "code/engine/cert/fw_cert.py",
+   "lab": "engine/cert/fw_cert.py"
+  },
+  {
+   "repo": "code/engine/cert/fw_cert2.py",
+   "lab": "engine/cert/fw_cert2.py"
+  },
+  {
+   "repo": "code/engine/cert/fw_cert3.py",
+   "lab": "engine/cert/fw_cert3.py"
+  },
+  {
+   "repo": "code/engine/cert/fw_tail2.py",
+   "lab": "engine/cert/fw_tail2.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_b4_smoke3.py",
+   "lab": "engine/cert/lin_b4_smoke3.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_float.py",
+   "lab": "engine/cert/lin_float.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_fw4_bg.py",
+   "lab": "engine/cert/lin_fw4_bg.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_fw4_bg3_make.py",
+   "lab": "engine/cert/lin_fw4_bg3_make.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_mc.py",
+   "lab": "engine/cert/lin_mc.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_stages.py",
+   "lab": "engine/cert/lin_stages.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_stages_v2.py",
+   "lab": "engine/cert/lin_stages_v2.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_sym.py",
+   "lab": "engine/cert/lin_sym.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_tm.py",
+   "lab": "engine/cert/lin_tm.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_tm_v2.py",
+   "lab": "engine/cert/lin_tm_v2.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_tm_v3.py",
+   "lab": "engine/cert/lin_tm_v3.py"
+  },
+  {
+   "repo": "code/engine/cert/lin_tube_v2.py",
+   "lab": "engine/cert/lin_tube_v2.py"
+  },
+  {
+   "repo": "code/engine/cert/lohner.py",
+   "lab": "engine/cert/lohner.py"
+  },
+  {
+   "repo": "code/engine/cert/lohner2.py",
+   "lab": "engine/cert/lohner2.py"
+  },
+  {
+   "repo": "code/engine/cert/param.py",
+   "lab": "engine/cert/param.py"
+  },
+  {
+   "repo": "code/engine/cert/pipeline.py",
+   "lab": "engine/cert/pipeline.py"
+  },
+  {
+   "repo": "code/engine/cert/run_v31.py",
+   "lab": "engine/cert/run_v31.py"
+  },
+  {
+   "repo": "code/engine/cert/run_v32.py",
+   "lab": "engine/cert/run_v32.py"
+  },
+  {
+   "repo": "code/engine/cert/taylor.py",
+   "lab": "engine/cert/taylor.py"
+  },
+  {
+   "repo": "code/engine/cert/test_lohner.py",
+   "lab": "engine/cert/test_lohner.py"
+  },
+  {
+   "repo": "code/engine/cert/test_lohner2.py",
+   "lab": "engine/cert/test_lohner2.py"
+  },
+  {
+   "repo": "code/engine/cert/test_tails.py",
+   "lab": "engine/cert/test_tails.py"
+  },
+  {
+   "repo": "code/engine/cert/test_tails_v31.py",
+   "lab": "engine/cert/test_tails_v31.py"
+  },
+  {
+   "repo": "code/engine/cert/test_tails_v32.py",
+   "lab": "engine/cert/test_tails_v32.py"
+  },
+  {
+   "repo": "code/engine/derive.py",
+   "lab": "engine/derive.py"
+  },
+  {
+   "repo": "code/engine/eqs_gen.py",
+   "lab": "engine/eqs_gen.py"
+  },
+  {
+   "repo": "code/engine/jet.py",
+   "lab": "engine/jet.py"
+  },
+  {
+   "repo": "code/engine/system.py",
+   "lab": "engine/system.py"
+  },
+  {
+   "repo": "code/lean_fw/LEAN-NOTE.md",
+   "lab": "lean_fw/LEAN-NOTE.md"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_all.json",
+   "lab": "lean_fw/fw_collatz_all.json"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_all.lean",
+   "lab": "lean_fw/fw_collatz_all.lean"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_logic.lean",
+   "lab": "lean_fw/fw_collatz_logic.lean"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_logic_control.lean",
+   "lab": "lean_fw/fw_collatz_logic_control.lean"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_tail.json",
+   "lab": "lean_fw/fw_collatz_tail.json"
+  },
+  {
+   "repo": "code/lean_fw/fw_collatz_tail.lean",
+   "lab": "lean_fw/fw_collatz_tail.lean"
+  },
+  {
+   "repo": "code/lean_fw/lean_all.py",
+   "lab": "lean_fw/lean_all.py"
+  },
+  {
+   "repo": "code/lean_fw/lean_tail.py",
+   "lab": "lean_fw/lean_tail.py"
+  },
+  {
+   "repo": "results/b5c/AMEND-LB-B5C-1.md",
+   "lab": "AMEND-LB-B5C-1.md"
+  },
+  {
+   "repo": "results/b5c/ARGUMENTS.md",
+   "lab": "b5/ARGUMENTS.md"
+  },
+  {
+   "repo": "results/b5c/BAR-LB-B5C.md",
+   "lab": "BAR-LB-B5C.md"
+  },
+  {
+   "repo": "results/b5c/METHOD_NOTES.md",
+   "lab": "b5/METHOD_NOTES.md"
+  },
+  {
+   "repo": "results/b5c/REFEREE-B5.md",
+   "lab": "seats/REFEREE-B5.md"
+  },
+  {
+   "repo": "results/b5c/RESULT.md",
+   "lab": "b5/RESULT.md"
+  },
+  {
+   "repo": "results/b5c/close_b5_results.json",
+   "lab": "b5/close_b5_results.json"
+  },
+  {
+   "repo": "results/b5c/close_sealed.log",
+   "lab": "b5/close_sealed.log"
+  },
+  {
+   "repo": "results/e5/BAR-LB-E5.md",
+   "lab": "BAR-LB-E5.md"
+  },
+  {
+   "repo": "results/e5/PROPOSAL-V32.md",
+   "lab": "PROPOSAL-V32.md"
+  },
+  {
+   "repo": "results/e5/runs6/chainA.log",
+   "lab": "runs6/chainA.log"
+  },
+  {
+   "repo": "results/e5/runs6/chainB.log",
+   "lab": "runs6/chainB.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_check_struct.py.log",
+   "lab": "runs6/ctl_check_struct.py.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_test_lohner2.py_box.log",
+   "lab": "runs6/ctl_test_lohner2.py_box.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_test_lohner2.py_thin.log",
+   "lab": "runs6/ctl_test_lohner2.py_thin.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_test_tails_v31.py_v31.log",
+   "lab": "runs6/ctl_test_tails_v31.py_v31.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_test_tails_v32.py_12_1e-12.log",
+   "lab": "runs6/ctl_test_tails_v32.py_12_1e-12.log"
+  },
+  {
+   "repo": "results/e5/runs6/ctl_test_tails_v32.py_13_1e-12.log",
+   "lab": "runs6/ctl_test_tails_v32.py_13_1e-12.log"
+  },
+  {
+   "repo": "results/e5/runs6/null2_smoke.log",
+   "lab": "runs6/null2_smoke.log"
+  },
+  {
+   "repo": "results/e5/runs6/nullV0.log",
+   "lab": "runs6/nullV0.log"
+  },
+  {
+   "repo": "results/e5/runs6/target.log",
+   "lab": "runs6/target.log"
+  },
+  {
+   "repo": "results/e5/runs6/warmup.log",
+   "lab": "runs6/warmup.log"
+  },
+  {
+   "repo": "results/g2/AMEND-LB-G2-1.md",
+   "lab": "AMEND-LB-G2-1.md"
+  },
+  {
+   "repo": "results/g2/BAR-LB-G2.md",
+   "lab": "BAR-LB-G2.md"
+  },
+  {
+   "repo": "results/lean/lean_all.log",
+   "lab": "lean_fw/lean_all.log"
+  },
+  {
+   "repo": "results/lean/lean_check.log",
+   "lab": "lean_fw/lean_check.log"
+  },
+  {
+   "repo": "results/lean/lean_logic_check.log",
+   "lab": "lean_fw/lean_logic_check.log"
+  },
+  {
+   "repo": "results/lean/lean_logic_control.log",
+   "lab": "lean_fw/lean_logic_control.log"
+  },
+  {
+   "repo": "results/lean/lean_tail.log",
+   "lab": "lean_fw/lean_tail.log"
+  },
+  {
+   "repo": "results/lean/lean_tail_check.log",
+   "lab": "lean_fw/lean_tail_check.log"
+  },
+  {
+   "repo": "results/m/AMEND-LB-M-1.md",
+   "lab": "AMEND-LB-M-1.md"
+  },
+  {
+   "repo": "results/m/AMEND-LB-M-2.md",
+   "lab": "AMEND-LB-M-2.md"
+  },
+  {
+   "repo": "results/m/BAR-LB-M.md",
+   "lab": "BAR-LB-M.md"
+  },
+  {
+   "repo": "results/m/PROOF-B4-v4-AMEND1.md",
+   "lab": "PROOF-B4-v4-AMEND1.md"
+  },
+  {
+   "repo": "results/m/PROPOSAL-B4-SPEEDUP.md",
+   "lab": "PROPOSAL-B4-SPEEDUP.md"
+  },
+  {
+   "repo": "results/m/SPEEDUP-LB-M.md",
+   "lab": "SPEEDUP-LB-M.md"
+  },
+  {
+   "repo": "results/m/runs6/fw_cert3_M2.5_Ka40_K55.log",
+   "lab": "runs6/fw_cert3_M2.5_Ka40_K55.log"
+  },
+  {
+   "repo": "results/m/runs6/fw_cert3_M3.5_Ka55_K2000.log",
+   "lab": "runs6/fw_cert3_M3.5_Ka55_K2000.log"
+  },
+  {
+   "repo": "results/m/runs6/fw_tail2_KT2000.log",
+   "lab": "runs6/fw_tail2_KT2000.log"
+  },
+  {
+   "repo": "results/m/runs6/fw_tail2_ctl.log",
+   "lab": "runs6/fw_tail2_ctl.log"
+  },
+  {
+   "repo": "results/m/runs7/count_R40.jsonl",
+   "lab": "runs7/count_R40.jsonl"
+  },
+  {
+   "repo": "results/m/runs7/count_R40.log",
+   "lab": "runs7/count_R40.log"
+  },
+  {
+   "repo": "results/m/runs7/ctl_C1.log",
+   "lab": "runs7/ctl_C1.log"
+  },
+  {
+   "repo": "results/m/runs7/ctl_R3.jsonl",
+   "lab": "runs7/ctl_R3.jsonl"
+  },
+  {
+   "repo": "results/m/runs7/ctl_R3.log",
+   "lab": "runs7/ctl_R3.log"
+  },
+  {
+   "repo": "results/m/runs7/kstar.log",
+   "lab": "runs7/kstar.log"
+  },
+  {
+   "repo": "results/m/runs7/run_m.sh",
+   "lab": "runs7/run_m.sh"
+  },
+  {
+   "repo": "results/m/runs7/verdict_M.json",
+   "lab": "runs7/verdict_M.json"
+  },
+  {
+   "repo": "results/pickles/L13_nsub2.pkl",
+   "lab": "b4speed/L13_nsub2.pkl"
+  },
+  {
+   "repo": "results/pickles/fields.pkl",
+   "lab": "engine/cert/fields.pkl"
+  },
+  {
+   "repo": "results/pickles/gen_cacheL_build.log",
+   "lab": "b4speed/cacheL_build.log"
+  },
+  {
+   "repo": "results/pickles/gen_fw4_bg.log",
+   "lab": "runs6/fw4_bg.log"
+  },
+  {
+   "repo": "results/pickles/gen_tube2_12.log",
+   "lab": "b4build2/tube2_12.log"
+  },
+  {
+   "repo": "results/pickles/gen_tube2_13.log",
+   "lab": "b4build2/tube2_13.log"
+  },
+  {
+   "repo": "results/pickles/lin_fields.pkl",
+   "lab": "engine/cert/lin_fields.pkl"
+  },
+  {
+   "repo": "results/pickles/lin_fields2.pkl",
+   "lab": "engine/cert/lin_fields2.pkl"
+  },
+  {
+   "repo": "results/pickles/lin_fw4_bg.pkl",
+   "lab": "engine/cert/lin_fw4_bg.pkl"
+  },
+  {
+   "repo": "results/pickles/lin_fw4_bg3.pkl",
+   "lab": "engine/cert/lin_fw4_bg3.pkl"
+  },
+  {
+   "repo": "results/pickles/lin_tube2_k1_2.pkl",
+   "lab": "engine/cert/lin_tube2_k1_2.pkl"
+  },
+  {
+   "repo": "results/pickles/lin_tube2_k1_3.pkl",
+   "lab": "engine/cert/lin_tube2_k1_3.pkl"
+  }
+ ],
+ "pickles": [
+  {
+   "lab": "engine/cert/fields.pkl",
+   "generator": "engine/cert/fields.py",
+   "repo": "results/pickles/fields.pkl",
+   "sha256": "736818c02663152307cfefc5b9a3ecb0aa1d5cdf6619858cd453f63e3b368d3b",
+   "ledger_pinned": true
+  },
+  {
+   "lab": "engine/cert/lin_fields.pkl",
+   "generator": "engine/cert/lin_sym.py",
+   "repo": "results/pickles/lin_fields.pkl",
+   "sha256": "6e645282375c3602a3117c364342f50cdc7742ea6070a2fefe765089ad5ebf2c",
+   "ledger_pinned": false
+  },
+  {
+   "lab": "engine/cert/lin_fields2.pkl",
+   "generator": "engine/cert/lin_mc.py",
+   "repo": "results/pickles/lin_fields2.pkl",
+   "sha256": "dce8eba80ec94e1dff72d4187f17029cd3a0e62ae65f3e71e41658ed7761fc26",
+   "ledger_pinned": true
+  },
+  {
+   "lab": "engine/cert/lin_tube2_k1_3.pkl",
+   "generator": "engine/cert/lin_tube_v2.py 1/3",
+   "repo": "results/pickles/lin_tube2_k1_3.pkl",
+   "sha256": "f6bff9e203c8a4e054a35bff0453d179d570dca6bd520665b900cb2b2c3071df",
+   "ledger_pinned": true
+  },
+  {
+   "lab": "engine/cert/lin_tube2_k1_2.pkl",
+   "generator": "engine/cert/lin_tube_v2.py 1/2",
+   "repo": "results/pickles/lin_tube2_k1_2.pkl",
+   "sha256": "17dadbfcfb78e235010610e0b7b627dcb76a35ceedc6601e4fc1b845bad3badf",
+   "ledger_pinned": true
+  },
+  {
+   "lab": "b4speed/L13_nsub2.pkl",
+   "generator": "b4speed/cacheL.py build 1/3 2 1e-20 b4speed/L13_nsub2.pkl",
+   "repo": "results/pickles/L13_nsub2.pkl",
+   "sha256": "c239cbe5347059080ea3c4144b8c5a65133cb4c4812a280096c8f5116dfbb782",
+   "ledger_pinned": true
+  },
+  {
+   "lab": "engine/cert/lin_fw4_bg.pkl",
+   "generator": "engine/cert/lin_fw4_bg.py",
+   "repo": "results/pickles/lin_fw4_bg.pkl",
+   "sha256": "a5d3f462191a4c7fe47c23e7d93e4890d4a9c4dfb9d12da8830624e47c18b469",
+   "ledger_pinned": false
+  },
+  {
+   "lab": "engine/cert/lin_fw4_bg3.pkl",
+   "generator": "engine/cert/lin_fw4_bg3_make.py",
+   "repo": "results/pickles/lin_fw4_bg3.pkl",
+   "sha256": "53008a7d2bc8cf30dbd4c69431bdcfa366c181fdc9e18b5f27358a0cc7eb63c0",
+   "ledger_pinned": true
+  }
+ ]
+}

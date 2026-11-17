@@ -1,0 +1,52 @@
+[    0.0s] [run_v32] Lohner step = lohner2.lohner_step2(mode=qrw); matcher = MatcherV32 (R8); ladder 1e-15,1e-14,1e-13,1e-12,1e-11,1e-10,1e-9
+[    0.4s] item 2 exact identities (k=1/2): {'sonic_S0_identically_zero': True, 'centre_Dc_equals_lam_c': True}
+[    0.4s] warm-up seed (float64-rounded exact data): ['[-0.56568542494923801378 +/- 9.28e-22]', '[0.29629629629629627985 +/- 1.46e-21]', '[0.061611938336945282213 +/- 8.58e-24]']
+[    0.8s] nu_s=0.004: no contraction: cp=[0.09879 +/- 3.94e-6] L*=nan c=[0.09878 +/- 2.59e-6] normS=[1.953 +/- 3.14e-4] no
+[    1.3s] nu_s=0.002: no contraction: cp=[0.09879 +/- 3.94e-6] L*=[37.47 +/- 3.14e-3] c=[0.09878 +/- 2.59e-6] normS=[1.953
+[    1.8s] nu_s=0.001 contracts over the box: eps=[6.38e-13 +/- 4.53e-16] epsX=[8.22e-14 +/- 1.95e-17] L*=[4.26 +/- 1.22e-3]
+[    1.8s] sealed rule: nu_s = 0.001 (first in ladder contracting at box radius [1.00e-9 +/- 1e-16])
+[   34.8s]   tau step 50 x=-0.00625 h=0.03421 width=[1.20e-22 +/- 2.76e-25] t=28.2s
+[   83.8s]   tau step 100 x=-0.02047 h=0.03658 width=[8.98e-22 +/- 2.38e-25] t=77.2s
+[  133.1s]   tau step 150 x=-0.04699 h=0.01955 width=[2.50e-21 +/- 3.93e-24] t=126.5s
+[  174.8s]   tau step 200 x=-0.09741 h=0.0209 width=[4.88e-21 +/- 1.58e-24] t=168.2s
+[  211.4s]   lohner step 50 x=-0.1192 h=0.0004276 width=[2.84e-21 +/- 1.27e-24] t=34.3s
+[  246.5s]   lohner step 100 x=-0.1442 h=0.0004572 width=[3.50e-21 +/- 4.98e-24] t=69.4s
+[  281.2s]   lohner step 150 x=-0.1780 h=0.0009776 width=[4.37e-21 +/- 1.51e-24] t=104.1s
+[  316.1s]   lohner step 200 x=-0.2244 h=0.001045 width=[5.58e-21 +/- 5.67e-25] t=139.0s
+[  351.5s]   lohner step 250 x=-0.2909 h=0.001117 width=[7.38e-21 +/- 1.28e-24] t=174.4s
+[  386.5s]   lohner step 300 x=-0.3899 h=0.002389 width=[1.07e-20 +/- 3.99e-23] t=209.4s
+[  422.2s]   lohner step 350 x=-0.5380 h=0.002554 width=[1.74e-20 +/- 4.85e-23] t=245.1s
+[  456.7s]   lohner step 400 x=-0.7645 h=0.005462 width=[3.15e-20 +/- 4.57e-23] t=279.6s
+[  491.2s]   lohner step 450 x=-1.0882 h=0.005839 width=[6.62e-20 +/- 3.10e-23] t=314.1s
+[  525.8s]   lohner step 500 x=-1.5317 h=0.01248 width=[1.71e-19 +/- 4.35e-22] t=348.7s
+[  562.6s]   lohner step 550 x=-2.0674 h=0.01335 width=[5.16e-19 +/- 4.97e-22] t=385.5s
+[  596.6s]   lohner step 600 x=-2.6725 h=0.01427 width=[1.75e-18 +/- 4.67e-21] t=419.5s
+[  632.0s]   lohner step 650 x=-3.3281 h=0.01526 width=[6.54e-18 +/- 1.28e-21] t=454.8s
+[  643.1s] point run: 641.3s |R|=[1.24e-12 +/- 4.10e-15] width_end=[1.02e-17 +/- 2.15e-20] Epoint=[8.66e-27 +/- 3.62e-30]
+[  692.3s]   tau step 50 x=-0.00625 h=0.03421 width=[1.02e-15 +/- 2.10e-18] t=42.2s
+[  742.8s]   tau step 100 x=-0.02047 h=0.03658 width=[9.95e-16 +/- 2.65e-19] t=92.8s
+[  793.5s]   tau step 150 x=-0.04699 h=0.01955 width=[9.05e-16 +/- 2.80e-20] t=143.5s
+[  835.7s]   tau step 200 x=-0.09741 h=0.0209 width=[1.85e-15 +/- 1.94e-18] t=185.6s
+[  873.9s]   lohner step 50 x=-0.1192 h=0.0004276 width=[3.63e-15 +/- 1.55e-18] t=35.6s
+[  908.6s]   lohner step 100 x=-0.1442 h=0.0004572 width=[4.27e-15 +/- 4.92e-18] t=70.3s
+[  942.3s]   lohner step 150 x=-0.1780 h=0.0009776 width=[5.15e-15 +/- 2.03e-18] t=103.9s
+[  976.5s]   lohner step 200 x=-0.2244 h=0.001045 width=[6.43e-15 +/- 8.49e-19] t=138.2s
+[ 1011.6s]   lohner step 250 x=-0.2909 h=0.001117 width=[8.40e-15 +/- 2.22e-18] t=173.2s
+[ 1046.2s]   lohner step 300 x=-0.3899 h=0.002389 width=[1.19e-14 +/- 7.72e-18] t=207.8s
+[ 1079.9s]   lohner step 350 x=-0.5380 h=0.002554 width=[1.89e-14 +/- 3.25e-17] t=241.6s
+[ 1114.9s]   lohner step 400 x=-0.7645 h=0.005462 width=[3.39e-14 +/- 1.35e-17] t=276.6s
+[ 1150.4s]   lohner step 450 x=-1.0882 h=0.005839 width=[7.12e-14 +/- 4.35e-17] t=312.1s
+[ 1184.2s]   lohner step 500 x=-1.5317 h=0.01248 width=[1.83e-13 +/- 4.42e-16] t=345.9s
+[ 1219.9s]   lohner step 550 x=-2.0674 h=0.01335 width=[5.51e-13 +/- 6.08e-17] t=381.6s
+[ 1255.2s]   lohner step 600 x=-2.6725 h=0.01427 width=[1.87e-12 +/- 2.20e-15] t=416.8s
+[ 1291.6s]   lohner step 650 x=-3.3281 h=0.01526 width=[6.95e-12 +/- 4.61e-15] t=453.3s
+[ 1303.4s] rung r=1e-15: contraction=True  max rad(K)/rad(X)=0.0247  Ebox=[1.76e-22 +/- 6.63e-26]  width_start=[1.01e-15 +/- 5.07e-19] width_end=[1.09e-11 +/- 3.56e-14] (660s)
+[ 1303.4s] PE4 ladder: [('1e-15', True, 0.02474823188573065, 1.7593372946234045e-22)]
+[ 1303.4s]   V0: K = [-0.565685424949238020 +/- 5.73e-19]   X = [-0.56568542494924 +/- 2.99e-15]
+[ 1303.4s]   W0: K = [0.2962962962962963 +/- 2.32e-17]   X = [0.29629629629630 +/- 4.73e-15]
+[ 1303.4s]   xc: K = [0.0616119383369453 +/- 4.08e-17]   X = [0.06161193833695 +/- 5.72e-15]
+[ 1303.4s] box repairs: leak4a(enclosed)=[1.86e-32 +/- 3.35e-35]  e_t=[1.56e-30 +/- 4.93e-33]  e^{L dmax}(switch)=[1.00000 +/- 2e-10]  e0=[2.15e-29 +/- 9.07e-33]  e_end=[1.28e-25 +/- 7.20e-29]  e^{L dmx}(end)=[1.00000 +/- 2e-10]  Erad=[1.76e-22 +/- 6.63e-26]
+[ 1303.4s] box 4c switch tangent: rigorous width [7.29e-5 +/- 2.90e-8], |rigorous - v3 surrogate| <= [0.000146 +/- 1.43e-7]
+[ 1303.4s] PE4 (K(X) contains the exact Friedmann data): True
+[ 1303.4s] total time 1303.4s
+memcap: exit 0, peak 0.10 GB of 8.00 GB cap

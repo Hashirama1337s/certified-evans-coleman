@@ -1,0 +1,7 @@
+lean: <lab>/lean_fw/fw_collatz_logic_control.lean  sha256 b0bafd4762e4e3f4  1 theorem(s): control_collatz_weak
+  BAD  control_collatz_weak  axioms: propext, sorryAx, Classical.choice, Quot.sound
+FAIL  lean 3078ef4ec1  21 s  log <labdata>-data/lean/2026-11-17t031408_b0bafd47.log
+  - lean exit code 1
+  - 1 error message(s); first: <LABDATA-WIN>-data\lean\check_b0bafd4762e4.lean:37:2: error: linarith failed to find a contradiction
+  - control_collatz_weak depends on non-standard axiom(s): sorryAx
+memcap: exit 1, peak 8.85 GB of 12.00 GB cap

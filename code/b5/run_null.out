@@ -1,0 +1,6 @@
+[   204s] N1_offsolution_sig0_times_1+1e-10 residual ['[-7.86074e-12 +/- 4.35e-18]', '[1.17726e-11 +/- 4.06e-17]'] certified nonzero: True
+[   395s] N2_k_17/50_at_k1/3_solution residual ['[0.00577626 +/- 8.48e-10]', '[-0.0168123 +/- 2.32e-8]'] certified nonzero: True
+[   465s] P3_FRW_closed_form_vs_k1/2_solution_(must_contain) residual ['[+/- 9.26e-79]', '[+/- 9.99e-78]'] certified nonzero: False
+[   538s] N3_FRW_closed_form_vs_k49/100_solution residual ['[0.000322477 +/- 1.46e-10]', '[-0.00218572 +/- 6.97e-10]'] certified nonzero: True
+DONE
+memcap: exit 0, peak 0.06 GB of 8.00 GB cap

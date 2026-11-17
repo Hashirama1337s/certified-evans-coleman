@@ -1,0 +1,16 @@
+﻿[    0.0s] fw_cert3: M=3.5 Ka=55.0 Kmax=2000.0 theta cells=160 ns=150 NB1=1500 depth 0 kratio 1.03 ladder - prec 128 cap 32
+[   52.1s] [sliver] x_end [-0.050000000 +/- 7e-14], l = [5.41e-14 +/- 1.32e-17], sup|f| = [0.727 +/- 1.12e-4], delta = [3.93e-14 +/- 4.64e-17]; last tau sub-cell re-enclosed: sig [-0.153 +/- 3.19e-4] ellphi [-0.06 +/- 7.48e-3]
+[   53.6s] [setup] bulk extended below xbar: 152 centre-manifold cells (theta >= 0.00137)
+[   53.7s] [lemma 4.1] C0(0) = C00, C1(0) = 0, C1'(0) = C11 contained; 128 dropped coefficients contain 0
+[   56.8s] [setup] cells 1230, sonic g=[0.08962 +/- 1.23e-6], A_max=[1.914 +/- 3.60e-4], centre data 66 cells, ctx.cap 32 (57s)
+[  172.4s] [bulk] 122 K-cells in [55.00, 2000.00] contractive; worst collatz [0.5682 +/- 1.20e-5], max e_b [0.1110 +/- 4.96e-5], max nbar [2.922 +/- 2.47e-4]
+[  922.2s] accepted cells by ns {150: 160}; theta cells 160 (+0 bisections, 160 centre evaluations), K-cells 122
+[  922.2s] worst lower/rhs = 1.314537 at K in [55.00, 56.65]; worst absolute margin (lower - rhs) = 0.00640567
+[  922.2s] VERDICT (CERTIFIED, fw_cert3: cap 32, strict coefficients, bg3 radii, sliver bound): no physical eigenvalue kappa with Re kappa >= 0 and 55 <= |kappa| <= 2000 (M = 3.5)
+py : memcap: exit 0, peak 0.89 GB of 8.00 GB cap
+At line:1 char:337
++ ... ngine/cert; py -3.11 <MEMCAP> 8 py -3.1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (memcap: exit 0,... of 8.00 GB cap:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

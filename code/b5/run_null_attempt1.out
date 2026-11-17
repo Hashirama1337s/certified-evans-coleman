@@ -1,0 +1,17 @@
+[   205s] N1_offsolution_sig0_times_1+1e-10 residual ['[-7.86074e-12 +/- 4.35e-18]', '[1.17726e-11 +/- 4.06e-17]'] certified nonzero: True
+[   390s] N2_k_17/50_at_k1/3_solution residual ['[0.00577626 +/- 8.48e-10]', '[-0.0168123 +/- 2.32e-8]'] certified nonzero: True
+Traceback (most recent call last):
+  File "<LAB-WIN>\b5\null.py", line 69, in <module>
+    c = sonic_G(51, 100, zsF, zmF, 'strong', '0.008')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LAB-WIN>\b5\null.py", line 34, in sonic_G
+    B = SO.branch(kk, zs, N=N, which=which, scale=arb('0.2'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LAB-WIN>\b5\sonic.py", line 168, in branch
+    lam, kap_other = _select(out, which)
+                     ^^^^^^^^^^^^^^^^^^^
+  File "<LAB-WIN>\b5\sonic.py", line 152, in _select
+    assert out['type'] == 'node' and lm > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+memcap: exit 1, peak 0.06 GB of 8.00 GB cap

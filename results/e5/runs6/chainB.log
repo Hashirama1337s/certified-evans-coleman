@@ -1,0 +1,8 @@
+test_tails_v32.py 13 1e-12 rc=0
+test_tails_v32.py 12 1e-12 rc=0
+test_tails_v31.py v31 rc=0
+test_lohner2.py thin rc=0
+test_lohner2.py box rc=0
+check_struct.py rc=0
+nullV0 rc=0
+null2 rc=0

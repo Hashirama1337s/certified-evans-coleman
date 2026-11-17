@@ -1,0 +1,30 @@
+{
+ "N1_offsolution_sig0_times_1+1e-10": {
+  "residual": [
+   "[-7.8607443e-12 +/- 4.34e-20]",
+   "[1.1772641e-11 +/- 4.39e-19]"
+  ],
+  "certified_nonzero": true
+ },
+ "N2_k_17/50_at_k1/3_solution": {
+  "residual": [
+   "[0.0057762592 +/- 4.76e-11]",
+   "[-0.016812277 +/- 1.78e-10]"
+  ],
+  "certified_nonzero": true
+ },
+ "P3_FRW_closed_form_vs_k1/2_solution_(must_contain)": {
+  "residual": [
+   "[+/- 9.26e-79]",
+   "[+/- 9.99e-78]"
+  ],
+  "certified_nonzero": false
+ },
+ "N3_FRW_closed_form_vs_k49/100_solution": {
+  "residual": [
+   "[0.00032247715 +/- 4.69e-12]",
+   "[-0.0021857193 +/- 3.86e-12]"
+  ],
+  "certified_nonzero": true
+ }
+}

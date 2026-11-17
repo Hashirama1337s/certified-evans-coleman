@@ -1,0 +1,10 @@
+{"bar": "BAR-LB-M", "seal": "b1b0ee1cde", "amendments": ["b92e091b0c", "4971bef2bf"],
+ "controls": {"C1a_winding": 1, "C1a_pass": true, "C1b_winding": 0, "C1b_pass": true, "C1c_kappa_g": "[0.3556992037 +/- 7.41e-11]", "C1c_pass": true,
+              "R3_N": 1, "R3_delta_over_pi": "[1.0000000 +/- 3.42e-8]", "R3_parity": true, "R3_pass": true},
+ "PM1": {"N_R40": 1, "delta_over_pi": "[1.0000 +/- 2.42e-5]", "parity": true, "discs": 99, "refinements": 0, "inconclusive": 0, "pass": true},
+ "PM2": {"kappa_star": "[2.810552549 +/- 3.83e-10]", "gamma": "[0.3558019224 +/- 6.97e-11]", "band_kappa": "2.8106 +- 0.0005", "band_gamma": "0.3558 +- 0.0001", "pass": true},
+ "PM3": {"c_V_xm": "[0.19288155165634 +/- 1.41e-15]", "Abar_ss_prime0": "[-0.198928186801772 +/- 4.57e-16]", "detA_root": "[-0.0990290820550 +/- 2.91e-14]", "iw2_all_199": true, "pass": true},
+ "runtime_s": {"C1": 853, "R3": 576, "count": 3786, "kstar": 67},
+ "amend2_condition_met": true,
+ "wording": "certified by interval arithmetic: the Evans-Coleman critical solution has exactly one growing non-gauge mode (Re kappa >= 0), kappa* in [2.810552549 +/- 3.83e-10], gamma in [0.3558019224 +/- 6.97e-11]",
+ "all_pass": true}

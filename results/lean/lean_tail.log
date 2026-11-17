@@ -1,0 +1,16 @@
+[    0.0s] [provenance] ctx.cap=32 prec=128 sha256 fw_tail2.py=a2ecd2ae5435cae416d10b635c4b8a9f6effd6781844363ef446770cd812ab51 fw_cert3.py=8f71e486ff5dd80718bd2338f13268fb7ad484522ebf0fa476cbf20652d10c0e lin_fw4_bg3.pkl=53008a7d2bc8cf30dbd4c69431bdcfa366c181fdc9e18b5f27358a0cc7eb63c0
+[   43.2s] [tail] K_T=2000: 1227 outer cells, x_T=[-6.33034 +/- 3.69e-6] (x_c(K_T)=[-6.34814 +/- 5.10e-7]), xi_T<=[0.001781 +/- 4.22e-7], theta_env=[0.001455 +/- 1.10e-8]
+[   44.5s] [env] xi sig -> [-0.357 +/- 4.26e-4], xi^2 chi -> [0.127 +/- 4.33e-4], beta_+ in [-1.0 +/- 1.27e-3], beta_+ + beta_- in [+/- 2.53e-3], A in [1.000 +/- 1.26e-5]
+[   44.6s]    sweep 0: collatz [0.90129 +/- 2.21e-6] at weights [50.0, 0.6, 500.0, Fraction(19, 20), Fraction(17, 20)]
+[   44.7s]    sweep 1: collatz [0.72501 +/- 2.65e-6] at weights [25.0, 0.6, 250.0, Fraction(19, 20), Fraction(17, 20)]
+[   44.8s]    sweep 2: collatz [0.64066 +/- 3.90e-6] at weights [12.5, 0.6, 250.0, Fraction(19, 20), Fraction(4, 5)]
+[   44.9s]    sweep 3: collatz [0.60165 +/- 1.72e-6] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(3, 4)]
+[   45.0s]    sweep 4: collatz [0.58076 +/- 1.18e-7] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(7, 10)]
+[   45.0s]    sweep 5: collatz [0.57246 +/- 4.41e-6] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(13, 20)]
+[   45.1s]    sweep 6: collatz [0.54791 +/- 4.80e-6] at weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(3, 5)]
+[   45.2s]    sweep 7: collatz [0.54071 +/- 3.97e-6] at weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(11, 20)]
+[    45s] bulk_tail weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(11, 20)], Collatz [0.540706 +/- 3.36e-8]
+A_up = [['0.219429', '0.0982062', '0.000364644'], ['0.962082', '0.109831', '0.243731'], ['0.866933', '0.0363838', '0.000330783']]
+y = ['0.3063', '1.0000', '0.5587']
+wrote lean_fw/fw_collatz_tail.lean: rational Collatz ratio 0.540738 (arb [0.540706 +/- 3.36e-8])
+memcap: exit 0, peak 0.84 GB of 8.00 GB cap

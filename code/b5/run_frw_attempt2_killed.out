@@ -1,0 +1,4 @@
+[    0.4s] sonic head at centre zs computed; class node lam [0.204187040286 +/- 4.46e-13]
+[    1.8s] sonic endpoints done in 1.4s; theta* = [-0.00610525363880741 +/- 3.72e-18], tail r = ['[4.48e-116 +/- 4.05e-119]', '[1.31e-113 +/- 3.21e-116]', '[2.55e-114 +/- 4.32e-117]']
+[    6.4s] sonic sub-boxes done (8)
+memcap: exit 1, peak 0.07 GB of 8.00 GB cap

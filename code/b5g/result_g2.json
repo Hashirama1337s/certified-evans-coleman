@@ -1,0 +1,157 @@
+{
+ "seat": "b5g (blind G2 second implementation)",
+ "formulation": "polar-areal slicing, central-lapse gauge alpha(t,0)=1; variables (dmu, dOm, dV, eta=dN/N) ~ exp(kappa tau), tau=-ln(-t), kappa>0 growing; independent variable z=1/N; interval Taylor models + causal tail bootstrap + Lohner QR; analytic Frobenius solutions at centre and sonic point; F = normalised 4x4 determinant",
+ "item1_kappa_star": {
+  "enclosure": "[2.810552 +/- 5.98e-7]",
+  "lo": 2.8105522155761715,
+  "hi": 2.8105525970458984,
+  "width": "3.8146972691777137e-07",
+  "F_lo": "[-0.0013487405987 +/- 3.60e-14]",
+  "F_hi": "[0.0001951523268 +/- 5.48e-14]",
+  "dF_on_interval": "[4047.2 +/- 0.0824]",
+  "sonic_exponent_on_interval": "[-2.647411 +/- 3.49e-7]",
+  "certified": true
+ },
+ "item1_enclosure_endpoints": "[2.8105522155761715, 2.8105525970458984]",
+ "item1_gamma": "[0.3558019 +/- 6.47e-8]",
+ "item1_gamma_endpoints": "[0.355801916339, 0.355801964631]",
+ "item1_gamma_note": "gamma endpoints = 1/hi, 1/lo printed to 12 digits (round-to-nearest); the rigorous ball is item1_gamma",
+ "item1_convergence_B": {
+  "enclosure": "[2.810552 +/- 5.98e-7]",
+  "lo": 2.8105522155761715,
+  "hi": 2.8105525970458984,
+  "gamma": "[0.3558019 +/- 6.47e-8]",
+  "certified": true,
+  "overlap_with_A": true,
+  "common_interval": "[2.8105522155761715, 2.8105525970458984]"
+ },
+ "item1_certified": true,
+ "item2_frw_control": {
+  "closed_form_rate": "1 (time-translation mode t -> t + const; derived by hand)",
+  "A": {
+   "closed_form_rate": "1",
+   "enclosure": "[0.99999, 1.00001]",
+   "F_lo": "[-0.007308947 +/- 4.37e-10]",
+   "F_hi": "[0.007310349 +/- 1.37e-10]",
+   "dF_K": "[7.3e+2 +/- 7.36]",
+   "certified_sign_change": true,
+   "unique_zero_in_enclosure": true,
+   "contains_closed_form": true
+  },
+  "B": {
+   "closed_form_rate": "1",
+   "enclosure": "[0.99999, 1.00001]",
+   "F_lo": "[-0.00461678115302 +/- 1.41e-15]",
+   "F_hi": "[0.00461758106938 +/- 4.13e-15]",
+   "dF_K": "[4.6e+2 +/- 5.56]",
+   "certified_sign_change": true,
+   "unique_zero_in_enclosure": true,
+   "contains_closed_form": true
+  },
+  "eigenfunction_matches_closed_form_A": true,
+  "eigenfunction_matches_closed_form_B": true,
+  "near_kappa0_pole_not_zero": [
+   [
+    "-0.01",
+    "[1.674633664 +/- 2.27e-10]",
+    "[1.0200000 +/- 3e-12]"
+   ],
+   [
+    "-0.001",
+    "[18.25649300 +/- 3.01e-10]",
+    "[1.0020000 +/- 3e-12]"
+   ],
+   [
+    "0.001",
+    "[-18.60995811 +/- 3.64e-9]",
+    "[0.99800000 +/- 3e-13]"
+   ],
+   [
+    "0.01",
+    "[-2.028616417 +/- 3.05e-11]",
+    "[0.98000000 +/- 3e-13]"
+   ]
+  ]
+ },
+ "item2_certified": true,
+ "item3_zeros_undeflated_0p40_2p70": [
+  {
+   "enclosure": "[0.9999, 1.0001]",
+   "exact_value": "1",
+   "F_lo": "[0.000263930963218 +/- 2.99e-16]",
+   "F_hi": "[-0.000264109162669 +/- 3.00e-16]",
+   "dF_on_interval": "[-2.6 +/- 0.0777]",
+   "identification": "GAUGE: time translation t -> t + const (the only residual coordinate freedom of polar-areal slicing with alpha(t,0)=1); eigenfunction e^tau (mu_x, Om_x, V_x, (lnN)_x + 1)",
+   "eigenfunction_check": true
+  }
+ ],
+ "item3_certified": true,
+ "item4_deflated": {
+  "function": "G(kappa) = F(kappa)/(kappa - 1)",
+  "signs": [
+   -1
+  ],
+  "n_intervals": 124,
+  "n_evaluations": 263,
+  "certified_constant_sign": true,
+  "sign": "negative",
+  "kappa_star_in_range": false
+ },
+ "item4_certified": true,
+ "controls": {
+  "ec_background_overlap_at_zm_A": true,
+  "ec_background_overlap_at_zm_B": true,
+  "ec_momentum_constraint_A": {
+   "ec_constraint_kappa_0.5": {
+    "residual": "[+/- 1.98e-18]",
+    "scale": "[0.049468227 +/- 4.90e-10]",
+    "contains0": true
+   },
+   "ec_constraint_kappa_2.0": {
+    "residual": "[+/- 2.48e-16]",
+    "scale": "[6.7290180 +/- 4.92e-8]",
+    "contains0": true
+   }
+  },
+  "frw_momentum_constraint_A": {
+   "residual": "[+/- 1.66e-12]",
+   "scale": "[0.60656045 +/- 3.26e-9]",
+   "contains0": true
+  },
+  "ec_gauge_eigenfunction_A": true,
+  "ec_gauge_eigenfunction_B": true
+ },
+ "inputs_reused_from_b5": {
+  "sig0": "[8.9013232777556435191172160567756856 +/- 5.31e-35]",
+  "zs": "[0.49718669611129068678126112853988237484 +/- 2.61e-39]"
+ },
+ "item1_refined_convergence": {
+  "A": {
+   "config": "A",
+   "lo": "2.8105525488271268040",
+   "hi": "2.8105525488272177534",
+   "F_lo": "[-8.40e-11 +/- 2.46e-14]",
+   "F_hi": "[2.841e-10 +/- 1.79e-14]",
+   "dF_K": "[4047.228081 +/- 1.25e-7]",
+   "certified": true,
+   "kappa_star": "[2.8105525488272 +/- 7.32e-14]",
+   "gamma": "[0.35580192244308 +/- 8.03e-15]",
+   "time_s": 41.3
+  },
+  "B": {
+   "config": "B",
+   "lo": "2.8105525488271268040",
+   "hi": "2.8105525488272177534",
+   "F_lo": "[-3.0263713e-11 +/- 3.45e-19]",
+   "F_hi": "[1.0237365e-10 +/- 1.10e-18]",
+   "dF_K": "[1458.363236 +/- 7.69e-8]",
+   "certified": true,
+   "kappa_star": "[2.8105525488272 +/- 7.32e-14]",
+   "gamma": "[0.35580192244308 +/- 8.03e-15]",
+   "time_s": 81.0
+  }
+ },
+ "resume_tested": false,
+ "resume_note": "no checkpoint/resume: every run is < 30 min and recomputes from scratch",
+ "float_only_items": []
+}

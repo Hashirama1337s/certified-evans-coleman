@@ -1,0 +1,10 @@
+[    0.5s] stage S ready (0s)
+[    0.9s] centre ready (1s)
+[  459.6s] stage L ready: 1440 steps (460s)
+[  466.3s] wrote b4speed/L13_nsub2.pkl: 1440 steps, 40.8 MB
+[  466.9s] stage S ready (1s)
+[  467.6s] centre ready (1s)
+[  473.7s] stage L ready: 1440 steps (7s)
+[  473.7s] round-trip check: 862 mismatches
+[  481.4s] point D(0): built [-108.527276 +/- 4.05e-7] + [+/- 2.38e-12]j   cached [-108.527276 +/- 4.05e-7] + [+/- 2.38e-12]j
+[  494.4s] point D(20.0j): built [-0.02102316 +/- 7.43e-9] + [0.0543439 +/- 2.97e-8]j   cached [-0.02102316 +/- 7.43e-9] + [0.0543439 +/- 2.97e-8]j

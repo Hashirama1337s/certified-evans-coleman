@@ -1,0 +1,8 @@
+[    0.0s] [v3] count_b4v3 kstar: ctx.cap 32, N_ARC 8, R_RULE [(2.0, 0.25), (5.0, 0.4), (90.0, 0.5)], R_RIGHT 1, R_EDGE_RE 5, shape halfdisc, frame A1, prec 128, m 16 J 4 nsub 2 tol 1e-20 REFINE 3, LB_CACHE13 <LAB>/b4speed/L13_nsub2.pkl, LB_R_FIXED None, LB_MAXDISCS None
+[    0.5s] stage S ready (0s)
+[    0.9s] centre ready (1s)
+[    4.8s] stage L ready: 1440 steps (5s)
+[    4.8s] [v3] engine: CachedLinear2(L13_nsub2.pkl, sha256 verified c239cbe53470), prec set to 128 after setup, TM frame A1
+[   67.0s] kappa* in [2.810552549 +/- 3.83e-10]   gamma = 1/kappa* in [0.3558019224 +/- 6.97e-11]
+memcap: exit 0, peak 1.12 GB of 8.00 GB cap
+rc=0

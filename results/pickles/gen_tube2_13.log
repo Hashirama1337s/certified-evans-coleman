@@ -1,0 +1,12 @@
+[    6.7s] sonic manifold (R7+R8): nu_s=0.06 eps=[1.02e-63 +/- 6.02e-67] epsX=[3.82e-65 +/- 1.34e-68] (7s)
+[   45.9s] tau leg: 69 steps, width [1.18e-19 +/- 4.26e-22] (46s)
+[   94.2s]   x step 100 x=-0.159 width [1.09e-17 +/- 4.53e-21] (94s)
+[  143.0s]   x step 200 x=-0.450 width [2.24e-17 +/- 1.29e-20] (143s)
+[  206.7s]   x step 300 x=-1.036 width [1.51e-16 +/- 4.92e-20] (207s)
+[  283.4s]   x step 400 x=-1.755 width [6.11e-16 +/- 1.32e-19] (283s)
+[  357.1s]   x step 500 x=-2.713 width [3.07e-15 +/- 1.02e-18] (357s)
+[  429.8s]   x step 600 x=-3.925 width [2.77e-14 +/- 4.11e-17] (430s)
+[  467.6s] x leg: 651 steps, end width [1.45e-13 +/- 1.34e-16] (468s)
+[  473.3s] centre manifold: eps=[3.29e-56 +/- 3.64e-59] epsX=[2.17e-56 +/- 1.27e-59]
+[  473.3s] saved <LAB>/engine/cert/lin_tube2_k1_3.pkl: 720 steps (473s)
+memcap: exit 0, peak 0.14 GB of 8.00 GB cap

@@ -1,0 +1,23 @@
+﻿[    0.0s] [provenance] ctx.cap=32 prec=128 sha256 fw_tail2.py=a2ecd2ae5435cae416d10b635c4b8a9f6effd6781844363ef446770cd812ab51 fw_cert3.py=8f71e486ff5dd80718bd2338f13268fb7ad484522ebf0fa476cbf20652d10c0e lin_fw4_bg3.pkl=53008a7d2bc8cf30dbd4c69431bdcfa366c181fdc9e18b5f27358a0cc7eb63c0
+[   37.9s] [tail] K_T=2000: 1227 outer cells, x_T=[-6.33034 +/- 3.69e-6] (x_c(K_T)=[-6.34814 +/- 5.10e-7]), xi_T<=[0.001781 +/- 4.22e-7], theta_env=[0.001455 +/- 1.10e-8]
+[   38.7s] [env] xi sig -> [-0.357 +/- 4.26e-4], xi^2 chi -> [0.127 +/- 4.33e-4], beta_+ in [-1.0 +/- 1.27e-3], beta_+ + beta_- in [+/- 2.53e-3], A in [1.000 +/- 1.26e-5]
+[   38.7s]    sweep 0: collatz [0.90129 +/- 2.21e-6] at weights [50.0, 0.6, 500.0, Fraction(19, 20), Fraction(17, 20)]
+[   38.8s]    sweep 1: collatz [0.72501 +/- 2.65e-6] at weights [25.0, 0.6, 250.0, Fraction(19, 20), Fraction(17, 20)]
+[   38.8s]    sweep 2: collatz [0.64066 +/- 3.90e-6] at weights [12.5, 0.6, 250.0, Fraction(19, 20), Fraction(4, 5)]
+[   38.9s]    sweep 3: collatz [0.60165 +/- 1.72e-6] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(3, 4)]
+[   39.0s]    sweep 4: collatz [0.58076 +/- 1.18e-7] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(7, 10)]
+[   39.0s]    sweep 5: collatz [0.57246 +/- 4.41e-6] at weights [6.25, 0.6, 250.0, Fraction(19, 20), Fraction(13, 20)]
+[   39.1s]    sweep 6: collatz [0.54791 +/- 4.80e-6] at weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(3, 5)]
+[   39.1s]    sweep 7: collatz [0.54071 +/- 3.97e-6] at weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(11, 20)]
+[   39.1s] [bulk tail] weights [3.125, 0.6, 250.0, Fraction(19, 20), Fraction(11, 20)], A = [['[0.2194 +/- 2.79e-5]', '[0.09821 +/- 3.93e-6]', '[0.0003646 +/- 4.26e-8]'], ['[0.9621 +/- 2.00e-5]', '[0.1098 +/- 2.98e-5]', '[0.2437 +/- 2.91e-5]'], ['[0.8669 +/- 3.16e-5]', '[0.03638 +/- 3.63e-6]', '[0.0003308 +/- 1.86e-8]']]
+[   39.1s] [bulk tail] Collatz [0.54071 +/- 3.97e-6] ok=True
+[   39.1s] [bulk tail] UNIFORM for all K >= 2000: v=['[1.540 +/- 3.01e-4]', '[2.050 +/- 1.03e-4]', '[1.410 +/- 1.30e-4]'] e_b <= [0.061458 +/- 4.34e-7], nbar <= [0.48432 +/- 2.93e-6]
+[  485.4s] theta cells 160, failures [], worst lower/rhs 14.774528920386063
+[  485.4s] VERDICT (CERTIFIED, fw_tail2): no physical eigenvalue kappa with Re kappa >= 0 and |kappa| >= 2000 (M = 3.5)
+py : memcap: exit 0, peak 0.85 GB of 8.00 GB cap
+At line:1 char:337
++ ... ngine/cert; py -3.11 <MEMCAP> 8 py -3.1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (memcap: exit 0,... of 8.00 GB cap:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,14 @@
+﻿[    0.0s] [provenance] ctx.cap=32 prec=128 sha256 fw_tail2.py=a2ecd2ae5435cae416d10b635c4b8a9f6effd6781844363ef446770cd812ab51 fw_cert3.py=8f71e486ff5dd80718bd2338f13268fb7ad484522ebf0fa476cbf20652d10c0e lin_fw4_bg3.pkl=53008a7d2bc8cf30dbd4c69431bdcfa366c181fdc9e18b5f27358a0cc7eb63c0
+[   36.1s] [ctl C1] deep cells 3: 147 key comparisons, non-overlaps 0; power check above x_T: 26 non-overlaps -> PASS
+[   37.3s] [ctl C2] Mono(sup)/cell integrand ratios on 3 deep cells: min 0.9789 max 1.0738 (band [0.9, 1.25]) -> PASS
+[   37.4s] [ctl C3] K=4000: outer quantities <= K_T values: True (max G2/((u/u_T) G2_T) = 0.4996, A2/A2_T = [0.9794, 0.4827, 0.4999])
+[   37.5s] [ctl C3] K=1e+09: outer quantities <= K_T values: True (max G2/((u/u_T) G2_T) = 0.0177, A2/A2_T = [0.9589, 0.0, 0.0])
+[   37.5s] [ctl C3] measured outer monotonicity -> PASS
+[   37.5s] CONTROLS: C1 True, C2 True, C3 True -> ALL PASS
+py : memcap: exit 0, peak 0.84 GB of 8.00 GB cap
+At line:1 char:436
++ ... _.Line)" }; py -3.11 <MEMCAP> 8 py -3.1 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (memcap: exit 0,... of 8.00 GB cap:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
