@@ -4,7 +4,7 @@
 critical solution) exists, and in round (spherical) linear perturbations it has exactly one way to fall (counting disturbances that are smooth through the sonic point, and not counting the clock-shift mode). We proved both
 with a computer that carries a guaranteed error bar on every number; the fall rate gives γ = 0.3558019224 ± 6.97e-11.**
 
-![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
+[![DOI 10.5281/zenodo.24303877](brand/doi.svg)](https://doi.org/10.5281/zenodo.24303877) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
 Moki & Julio · 2026 · version 1.0
 
@@ -172,10 +172,10 @@ referee report and correction. [CLAIMS.md](CLAIMS.md) gives every claim's status
 ## How to cite
 
 ```
-Moki & Julio (2026). A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent. Version 1.0.
+Moki & Julio (2026). A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24303877
 ```
 
-Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
+The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24303878. Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
 
 ## Related projects
 
