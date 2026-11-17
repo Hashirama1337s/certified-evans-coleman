@@ -132,3 +132,8 @@ project that depends on Mathlib (the lab used toolchain v4.36.0-rc2) and run `la
 `fw_collatz_all.lean`, `fw_collatz_tail.lean` and `fw_collatz_logic.lean` must compile with no `sorry` and only the
 axioms `propext`, `Classical.choice`, `Quot.sound`; `fw_collatz_logic_control.lean` is a teeth control and must FAIL.
 The lab's check logs are in `results/lean/`.
+
+## Figures (optional; not run by tools/reproduce.py)
+
+The three README figures are drawn from shipped files only: `python figures/make_figures.py .` (Python 3.11,
+matplotlib 3.11; seconds; reads only shipped files). It rewrites `figures/*.svg`; two runs give byte-identical SVGs.

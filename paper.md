@@ -2,7 +2,7 @@
 
 **Moki & Julio**
 
-Version 1.0, 2026. Every number below is traced to a lab result file in `CLAIMS.md`. Balls are
+Version 1.0.1, 2026. Every number below is traced to a lab result file in `CLAIMS.md`. Balls are
 printed as `[mid ± rad]` exactly as the certifying program stored them; interval ends are printed as stored.
 
 ---
@@ -638,6 +638,37 @@ to the lab's after removing run times only (`results/CLEANROOM-REPORT.md`; 3.5 h
 - The Living Review of Gundlach, Hilditch and Martín-García (2025) states that existence and stability of the relativistic
   Hunter solutions had not been proved.
 
+## 13. Open doors
+
+What this work leaves open, and what we noticed and did not follow up. Status words: "in progress" means work under way
+by us; "open according to" quotes the literature; "UNTESTED" marks an observation of ours that we did not test.
+
+- **Non-spherical modes.** The count (Theorem 5) is spherical. Gundlach found numerically, in a mode ansatz, no growing
+  non-spherical mode at k = 1/3 ([Gun]; as reported in [GHM]). A certified count in every angular sector needs a Far Wall
+  uniform in both κ and the angular number l. *Status:* in progress by us (November 2026).
+- **The first Hunter solution.** For the isothermal Euler-Poisson system, Sandine states that constructing the i-th
+  Hunter solution for small i, in particular i = 1, "remains an open problem" [San25, §1.1]; the first Hunter solution is
+  "believed to play a role in describing critical collapse" [San23]. The Living Review calls the Hunter (a) solution the
+  Newtonian counterpart of the critical solution [GHM]. The manifold-matching machinery of Sections 3-4 fits this
+  structure. UNTESTED bridge: in spherical symmetry the formal k → 0 limit of the field equations in polar-radial
+  coordinates is an isothermal fluid coupled to Newtonian gravity [GHM], so the Evans-Coleman family might be continued
+  to Hunter's solution. *Status:* open according to Sandine 2025 [San25, §1.1] (no later construction found in our
+  search of 2026-11-17).
+- **The stiff edge, k > 0.89.** Maison reports that the solution with one zero of v "exists only up to a certain maximal
+  value kmax ≈ 0.888, where the singular sonic point changes its character" [Mai]; the Living Review reports that Neilsen
+  and Choptuik found CSS critical solutions for all k up to 1 [GHM]; Harada finds the kink mode unstable for 0.89 ≲ k
+  [Har]. Our expectation for the analytic class there (one growing mode, plus Harada's kink mode) is untested. The
+  node-segment GAP of Theorem 2 (Section 11) is a uniqueness question that a changed sonic point may sharpen.
+  *Status:* UNTESTED observation from this work.
+- **Local uniqueness.** Neither Theorem 1 nor Theorem 2 gives local uniqueness (Section 11; CLAIMS C4). A derivative bound
+  on the matching-map tail and a closure of the node-segment GAP would identify the E5 and B5 solutions, and with them
+  make the blind κ* enclosure of Section 8 a statement about the E5 solution. *Status:* UNTESTED observation from this
+  work.
+- **Transfer of the frame change and the Far Wall.** The characteristic-frame Taylor-model remainder (Section 6.1) and the
+  Levinson-slaving Far Wall (Section 7, Appendices A-C) address analytic ODE eigenvalue problems with a large spectral
+  parameter; the energy identity for Re λ > 1 of [GHJS] might shrink the half-disc of Section 6 for Einstein-Euler.
+  Neither transfer was tried. *Status:* UNTESTED observation from this work.
+
 ## References
 
 Labels: OPENED = the lab read the text (copy in the lab's source folder; locators are line numbers there); ABSTRACT =
@@ -649,18 +680,18 @@ abstract or record only. arXiv identifiers are given; journal data only where th
 - [GHJ] Y. Guo, M. Hadžić, J. Jang, arXiv:2112.10826, Thm 1.1 (l.215). OPENED.
 - [GHJS] Y. Guo, M. Hadžić, J. Jang, M. Schrecker, arXiv:2509.12435, l.524-540. OPENED.
 - [GHM] C. Gundlach, D. Hilditch, J. M. Martín-García, Living Review, arXiv:2507.07636 v1, §VII B l.2279-2282, §VII C
-  l.2302-2306. OPENED.
+  l.2302-2306, l.1282-1290, l.1360-1361, l.1428-1431, l.1701-1705. OPENED.
 - [GJ] K. Goldstein, V. Jejjala, arXiv:2609.21797 v2, abstract and pp. 1-2. OPENED.
 - [Gon] E. A. Gonçalves, Zenodo record 10.5281/zenodo.23270506 (v2, 2026), description. ABSTRACT.
 - [Gun] Gundlach, "Critical gravitational collapse of a perfect fluid: nonspherical perturbations", arXiv:gr-qc/9906124, abstract. ABSTRACT.
-- [Har] T. Harada, arXiv:gr-qc/0109042 v2, abstract (l.15-24), l.470-478, l.785-795, l.900-908. OPENED.
+- [Har] T. Harada, arXiv:gr-qc/0109042 v2, abstract (l.15-24), l.26, l.470-478, l.785-795, l.900-908. OPENED.
 - [HKA] T. Hara, T. Koike, S. Adachi, arXiv:gr-qc/9607010, l.54, l.108-111, l.2231-2234, l.2492-2496, l.2517, l.2545,
   l.2692-2697, l.2721-2725, l.2749. OPENED.
 - [KHA] T. Koike, T. Hara, S. Adachi, arXiv:gr-qc/9503007, abstract l.10-17, eq. (16), eq. (18), l.210-218. OPENED.
 - [Mai] D. Maison, arXiv:gr-qc/9504008, eq. (4), eq. (8), l.128-133, l.176. OPENED.
 - [RT] M. Reiterer, E. Trubowitz, arXiv:1203.3766, abstract. OPENED.
-- [San23] E. Sandine, arXiv:2310.18870, l.299-301. OPENED.
-- [San25] E. Sandine, arXiv:2508.05817, l.264-268, l.359. OPENED.
+- [San23] E. Sandine, arXiv:2310.18870, l.295-296, l.299-301. OPENED.
+- [San25] E. Sandine, arXiv:2508.05817, §1.1, l.264-268, l.359. OPENED.
 - [SWYM] Smoller, Wasserman, Yau, McLeod, "Smooth static solutions of the Einstein-Yang/Mills equation",
   arXiv:math/9210226 (1992), abstract page. ABSTRACT.
 

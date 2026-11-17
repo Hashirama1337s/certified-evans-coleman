@@ -3,7 +3,7 @@ message: "If you use this work, please cite it as below."
 title: "A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent"
 authors:
   - name: "Moki & Julio"
-version: "1.0"
+version: "1.0.1"
 doi: "10.5281/zenodo.24303877"
 license: CC-BY-4.0
 keywords:
