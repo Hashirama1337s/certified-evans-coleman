@@ -30,6 +30,8 @@ def read(rel):
 def main():
     bad = 0
     patched = pathpatch.patched_files()
+    red = pathpatch.redacted_ids()
+    redacted_files = {rel for rel, v in patched.items() if any(x.split()[0] in red for x in v.get('entries', []))}
     md = open(os.path.join(ROOT, 'PATCHES.md'), encoding='utf-8').read()
     md_rows = {m.group(1): m.group(2) for m in
                re.finditer(r'^\| (\S+) \| (?:yes|no) \| `[0-9a-f]{64}` \| `([0-9a-f]{64})` \|', md, re.M)}
@@ -38,6 +40,8 @@ def main():
         data = read(p['path'])
         if data is None:
             ok, how = False, 'missing'
+        elif p['path'] in redacted_files:
+            ok, how = sha_b(data) == patched[p['path']]['patched_sha256'], 'REDACTED for privacy: pin verifiable against the lab ledger only; shipped bytes checked'
         elif p['path'] in patched:
             ok, how = sha_b(pathpatch.restore_bytes(data)) == p['sha256'], 'restored'
         else:
@@ -46,6 +50,11 @@ def main():
         print('%s  %s  %s (%s)' % ('pin OK ' if ok else 'PIN BAD', p['path'], p['sha256'][:16], how))
     for rel, v in sorted(patched.items()):
         data = read(rel)
+        if rel in redacted_files:
+            ok = data is not None and sha_b(data) == v['patched_sha256'] and md_rows.get(rel) == v['patched_sha256']
+            bad += not ok
+            print('%s  %s (REDACTED for privacy; original verifiable against the lab ledger only)' % ('patch OK ' if ok else 'PATCH BAD', rel))
+            continue
         ok = (data is not None and sha_b(data) == v['patched_sha256'] and md_rows.get(rel) == v['patched_sha256']
               and sha_b(pathpatch.restore_bytes(data)) == v['original_sha256']
               and pathpatch.patch_bytes(pathpatch.restore_bytes(data)) == data)

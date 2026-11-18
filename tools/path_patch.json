@@ -45,9 +45,11 @@
   },
   {
    "id": "R8",
-   "original_hex": "433a5c55736572735c7374657665",
+   "original_hex": "",
    "placeholder": "<HOME>",
-   "names": "user home folder (in recorded shell error lines)"
+   "names": "user home folder (in recorded shell error lines)",
+   "redacted": true,
+   "redaction_note": "Correction 2026-11-17: original string removed for privacy (it named the owner / a home folder); files carrying this placeholder cannot be restored byte-for-byte and are verifiable against the lab ledger only."
   },
   {
    "id": "R9",
@@ -69,9 +71,11 @@
   },
   {
    "id": "R12",
-   "original_hex": "5374657665",
+   "original_hex": "",
    "placeholder": "<OWNER>",
-   "names": "the lab owner's first name (in a sealed bar file)"
+   "names": "the lab owner's first name (in a sealed bar file)",
+   "redacted": true,
+   "redaction_note": "Correction 2026-11-17: original string removed for privacy (it named the owner / a home folder); files carrying this placeholder cannot be restored byte-for-byte and are verifiable against the lab ledger only."
   },
   {
    "id": "R13",

@@ -6,7 +6,7 @@ with a computer that carries a guaranteed error bar on every number; the fall ra
 
 [![DOI 10.5281/zenodo.24303877](brand/doi.svg)](https://doi.org/10.5281/zenodo.24303877) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
-Moki & Julio · 2026 · version 1.0.1
+Moki & Julio · 2026 · version 1.0.2
 
 **Read** [paper.md](paper.md) · **Re-run** [tools/reproduce.md](tools/reproduce.md) · **Check** [CLAIMS.md](CLAIMS.md) and [SCORECARD.md](SCORECARD.md)
 
@@ -226,12 +226,13 @@ What this work leaves open, and what we noticed along the way but did not follow
 ## How to cite
 
 ```
-Moki & Julio (2026). A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.24303877
+Moki & Julio (2026). A certified Evans-Coleman critical solution: existence, one growing spherical mode, and its exponent. Version 1.0.2. Zenodo. https://doi.org/10.5281/zenodo.24303877
 ```
 
 The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24303878. Machine-readable: [CITATION.cff](CITATION.cff). Text and data: CC BY 4.0 (`LICENSE`). Code: MIT (`LICENSE-CODE`).
 
 v1.0.1: adds Open doors and figures; no change to the certified results.
+v1.0.2: privacy correction (2026-11-17): two path-patch entries redacted (see PATCHES.md); no change to the certified results.
 
 ## Related projects
 

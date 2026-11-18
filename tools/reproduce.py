@@ -161,11 +161,17 @@ def setup(work):
     shutil.copytree(os.path.join(ROOT, 'code'), work, dirs_exist_ok=True,
                     ignore=shutil.ignore_patterns('__pycache__'))
     patched = pathpatch.patched_files()
+    red = pathpatch.redacted_ids()
     n = 0
     for rel in patched:
         if rel.startswith('code/'):
             p = os.path.join(work, rel[5:])
             pathpatch.restore_file(p)
+            if any(x.split()[0] in red for x in patched[rel].get('entries', [])):
+                # redacted for privacy (2026-11-17, PATCHES.md): cannot be restored byte-for-byte; it is a recorded
+                # output log, not an input of any check, so it stays as shipped
+                print('[reproduce] %s: REDACTED for privacy, left as shipped (not an input of any check)' % rel)
+                continue
             if sha(p) != patched[rel]['original_sha256']:
                 sys.exit('[reproduce] restore failed for %s' % rel)
             n += 1

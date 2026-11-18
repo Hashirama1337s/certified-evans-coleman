@@ -3,8 +3,8 @@
 The lab's files name lab folders in string literals (sys.path inserts, input and output file names, usage lines),
 in recorded logs (the folder each run started in, the memory-cap launcher line) and in recorded ledger rows. To
 keep machine paths out of the public repository, every shipped copy has had those strings replaced by placeholders
-from one fixed table, `tools/path_patch.json`, applied in the order below. Nothing else in any file was changed,
-and no file was redacted: the substitution is exactly reversible.
+from one fixed table, `tools/path_patch.json`, applied in the order below. Nothing else in any file was changed.
+The substitution is exactly reversible except for two entries (R8, R12) that were redacted on 2026-11-17 (below).
 
 - `tools/check_pins.py` restores every patched file in memory and checks that the restored bytes have the original
   sha256 (for sealed files: the lab ledger pin, `tools/pins.json`), and that the shipped file has the patched sha256
@@ -12,7 +12,12 @@ and no file was redacted: the substitution is exactly reversible.
 - `tools/reproduce.py` restores the originals inside its work folder before running anything, so every run sees
   the sealed bytes. The lab root that the restored instruments name is then pointed at the work folder at compile
   time by `tools/run_sealed.py` (files on disk unchanged).
-- The original strings are stored in the table as hex, so that the table itself carries no path text.
+- The original strings are stored in the table as hex. Hex is an encoding, not removal: anyone can decode it.
+- **Correction 2026-11-17 (privacy).** Entries R8 (`<HOME>`) and R12 (`<OWNER>`) decoded to a home folder and the owner's
+  first name. Their originals have been removed from the table. The two files that carry them
+  (`results/e5/BAR-LB-E5.md`, `code/b5/run_crosscheck50_attempt1.out`) can no longer be restored byte-for-byte; `check_pins.py`
+  reports them as REDACTED and checks their shipped bytes, and their original sha256 (listed here and in the lab ledger)
+  is verifiable against the lab ledger only. Versions 1.0 and 1.0.1 of this record carried the decodable entries.
 - Data files (`results/pickles/*.pkl`) are binary and are never patched; none of them contains a lab path.
 
 ## Substitution table (applied in this order; restored in reverse order)

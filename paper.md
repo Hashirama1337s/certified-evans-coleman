@@ -2,7 +2,7 @@
 
 **Moki & Julio**
 
-Version 1.0.1, 2026. Every number below is traced to a lab result file in `CLAIMS.md`. Balls are
+Version 1.0.2, 2026. Every number below is traced to a lab result file in `CLAIMS.md`. Balls are
 printed as `[mid ± rad]` exactly as the certifying program stored them; interval ends are printed as stored.
 
 ---

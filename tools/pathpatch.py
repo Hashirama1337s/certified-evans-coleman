@@ -25,7 +25,8 @@ def load():
 
 def table():
     """[(original bytes, placeholder bytes)], in the order they are applied (restore runs them in reverse)."""
-    return [(bytes.fromhex(e["original_hex"]), e["placeholder"].encode("utf-8")) for e in load()["table"]]
+    return [(bytes.fromhex(e["original_hex"]), e["placeholder"].encode("utf-8")) for e in load()["table"]
+            if not e.get("redacted")]  # redacted entries (privacy, 2026-11-17) are never restored
 
 
 def patch_bytes(data):
@@ -66,3 +67,8 @@ if __name__ == '__main__':
                     fh.write(new)
                 n += 1
     print('pathpatch: restored %d file(s) under %s' % (n, sys.argv[2]))
+
+
+def redacted_ids():
+    """Ids of table entries whose original was removed for privacy (2026-11-17)."""
+    return {e["id"] for e in load()["table"] if e.get("redacted")}
