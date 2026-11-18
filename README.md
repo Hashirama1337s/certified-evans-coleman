@@ -236,6 +236,7 @@ v1.0.2: privacy correction (2026-11-17): two path-patch entries redacted (see PA
 
 ## Related projects
 
+- [certified-page-time](https://github.com/Hashirama1337s/certified-page-time): certified Page evaporation constants (entropy ratio and Page time) of a Schwarzschild black hole emitting photons and gravitons
 - [certified-bowen-york-spin](https://github.com/Hashirama1337s/certified-bowen-york-spin): the certified spin ceiling of Bowen-York black holes
 - [certified-kummer-k3](https://github.com/Hashirama1337s/certified-kummer-k3): a certified closeness bound for a Kummer K3 surface
 - [certified-chen-lebrun-weber](https://github.com/Hashirama1337s/certified-chen-lebrun-weber): a certified approximation of the Chen-LeBrun-Weber Einstein metric
